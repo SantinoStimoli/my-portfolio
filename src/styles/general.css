@@ -9,6 +9,6 @@
     }
 }
 
-.logo-section img:hover~span {
+.logo-section div:hover~span {
     @apply left-0 opacity-100
 }

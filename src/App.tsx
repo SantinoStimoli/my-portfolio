@@ -4,6 +4,7 @@ import AboutMe from './routes/AboutMe'
 import NotFound from './routes/NotFound'
 import Header from './components/body/Header'
 import useTheme from './hooks/useTheme'
+import Contact from './routes/Contact'
 
 const App = () => {
     const PAGE_THEME = useTheme().theme
@@ -14,7 +15,8 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path='' element={<Home />} />
-                <Route path='about-me' element={<AboutMe />} />
+                <Route path='sobre-mi' element={<AboutMe />} />
+                <Route path='contacto' element={<Contact />} />
                 <Route path='*' element={<NotFound />} />
             </Routes>
         </div>
