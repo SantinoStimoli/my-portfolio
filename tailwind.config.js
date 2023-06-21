@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bluesi': '#fff',
-      },
+        primary: 'rgba(var(--bg-primary) / <alpha-value>)',
+      }
     },
   },
   plugins: [],

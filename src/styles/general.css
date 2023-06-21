@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --bg-primary: 156 94 94;
+        --bg-secondary: 111 114 185;
+    }
+}
