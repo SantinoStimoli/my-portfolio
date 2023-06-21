@@ -11,7 +11,6 @@ export function getActualTheme() {
         localStorage.setItem('theme', THEME.LIGHT)
         return THEME.LIGHT
     }
-    console.log(actualTheme);
 
     return actualTheme
 }

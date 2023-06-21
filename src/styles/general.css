@@ -12,3 +12,7 @@
 .logo-section div:hover~span {
     @apply left-0 opacity-100
 }
+
+.hover-box {
+    @apply absolute bg-black/10 backdrop-blur-lg rounded transition-all duration-[400ms] ease-in-out z-10 opacity-0;
+}
