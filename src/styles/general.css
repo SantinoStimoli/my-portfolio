@@ -8,3 +8,7 @@
         --bg-secondary: 111 114 185;
     }
 }
+
+.logo-section img:hover~span {
+    @apply left-0
+}

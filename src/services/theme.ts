@@ -12,5 +12,6 @@ export function getActualTheme() {
         return THEME.LIGHT
     }
     console.log(actualTheme);
+
     return actualTheme
 }
