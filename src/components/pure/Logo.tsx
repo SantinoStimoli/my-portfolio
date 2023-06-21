@@ -8,7 +8,7 @@ const Logo = () => {
     return (
         <div className="flex flex-grow basis-0 items-center gap-3 logo-section">
             <img className="w-16 h-fit my-auto z-20 md:bg-primary" src={LOGO.DARK} />
-            <span className=" text-white relative -left-32 z-10 transition-all duration-500 -md:hidden cursor-default"> Santino Stimoli</span>
+            <span className=" text-white relative -left-28 z-10 transition-all duration-500 -md:hidden cursor-default opacity-0"> Santino Stimoli</span>
         </div>
     )
 }

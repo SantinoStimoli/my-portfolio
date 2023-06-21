@@ -5,7 +5,7 @@ import Options from "../pure/Options"
 
 const Header = () => {
     return (
-        <header className="bg-primary flex justify-between w-full">
+        <header className="bg-primary flex justify-between w-full py-2.5 px-3">
             <Logo />
             <Nav navList={['Inicio', 'Sobre mi', 'Contacto']} />
             <Options />
