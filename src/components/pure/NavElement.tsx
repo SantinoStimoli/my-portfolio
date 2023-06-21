@@ -10,7 +10,7 @@ interface Props {
 
 const NavElement = ({ to, setProps, hideBox }: Props) => {
 
-    const element = useRef(null)
+    const element: any = useRef(null) //!!IMPORTANTE ARREGLAR ANY
 
     function getProps() {
         const { left, top, width, height }: Position = element.current?.getBoundingClientRect()

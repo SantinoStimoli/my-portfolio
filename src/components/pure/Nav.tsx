@@ -6,7 +6,7 @@ const Nav = ({ navList }: { navList: string[] }) => {
 
     const [props, setProps] = useState<Position>()
 
-    const hoverElement: any = useRef(null)
+    const hoverElement: any = useRef(null) //!!IMPORTANTE ARREGLAR
 
     useEffect(() => moveBox(), [props])
 
