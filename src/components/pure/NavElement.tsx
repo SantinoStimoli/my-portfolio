@@ -10,11 +10,11 @@ interface Props {
 
 const NavElement = ({ to, setProps, hideBox }: Props) => {
 
-    const element: any = useRef(null) //!!IMPORTANTE ARREGLAR ANY
+    const element = useRef<HTMLAnchorElement | null>(null)
 
     function getProps() {
-        const { left, top, width, height }: Position = element.current?.getBoundingClientRect()
-        setProps({ left: left, top: top, width: width, height: height });
+        const props = element.current?.getBoundingClientRect()
+        setProps({ left: props?.left, top: props?.top, width: props?.width, height: props?.height });
     }
 
     return (<NavLink ref={element} onMouseEnter={() => getProps()} onMouseLeave={() => hideBox()} className='px-3 py-2 my-0.5 rounded z-10' to={navFormater(to)}>{to}</NavLink>)

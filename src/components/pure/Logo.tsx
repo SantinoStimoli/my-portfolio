@@ -3,7 +3,7 @@ import { THEME } from "../../services/theme"
 
 const Logo = () => {
 
-    const theme: any = useTheme().theme
+    const theme = useTheme().theme
 
     const LOGO = {
         DARK: '/SS-LOGO-1.png',

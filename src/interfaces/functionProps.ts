@@ -1,6 +1,6 @@
 interface Position {
-    left: number | null
-    top: number | null
-    width: number | null
-    height: number | null
+    left: number | null | undefined
+    top: number | null | undefined
+    width: number | null | undefined
+    height: number | null | undefined
 }
