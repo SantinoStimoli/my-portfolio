@@ -7,7 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: 'rgba(var(--bg-primary) / <alpha-value>)',
+        primary_bg: 'rgba(var(--bg-primary) / <alpha-value>)',
+        secondary_bg: 'rgba(var(--bg-secondary) / <alpha-value>)',
+        primary_tx: 'rgba(var(--text-primary) / <alpha-value>)',
+        secondary_tx: 'rgba(var(--text-secondary) / <alpha-value>)',
+        details: 'rgba(var(--text-details) / <alpha-value>)',
       }
     },
   },

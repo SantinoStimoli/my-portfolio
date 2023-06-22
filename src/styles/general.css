@@ -4,14 +4,38 @@
 
 @layer base {
     :root {
-        --bg-primary: 156 94 94;
-        --bg-secondary: 111 114 185;
+        --bg-primary: 225 208 209;
+        --bg-secondary: 99 112 119;
+        --text-primary: 255 255 255;
+        --text-secondary: 184 124 76;
+        --text-details: 170 187 204;
     }
 
     .dark-mode {
-        --bg-primary: 15 4 94;
-        --bg-secondary: 11 11 15;
+        --bg-primary: 0 28 48;
+        --bg-secondary: 39 55 77;
+        --text-primary: 255 255 255;
+        --text-secondary: 218 255 251;
+        --text-details: 100 204 197;
     }
+}
+
+* {
+    @apply transition-colors duration-300
+}
+
+body {
+    @apply bg-primary_bg;
+    color: white
+}
+
+p,
+span,
+a,
+h1,
+h2,
+h3 {
+    @apply text-primary_tx
 }
 
 .logo-section div:hover~span {

@@ -9,7 +9,6 @@ const Options = () => {
             <div className="flex items-center gap-1">
                 <i className={'bx bx-md cursor-pointer ' + (theme === THEME.LIGHT ? 'bx-sun' : 'bx-moon')} onClick={() => changeTheme()} />
             </div>
-
         </div>
     )
 }
