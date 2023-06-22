@@ -4,19 +4,19 @@
 
 @layer base {
     :root {
-        --bg-primary: 225 208 209;
-        --bg-secondary: 99 112 119;
-        --text-primary: 255 255 255;
-        --text-secondary: 184 124 76;
-        --text-details: 170 187 204;
-        --header-bg: 44 62 80;
+        --bg-primary: 251 250 255;
+        --bg-secondary: 216 211 205;
+        --text: 105 116 118;
+        --title: 105 116 118;
+        --text-details: 16 131 214;
+        --header-bg: 160 167 173;
     }
 
     .dark-mode {
         --bg-primary: 0 28 48;
         --bg-secondary: 39 55 77;
-        --text-primary: 255 255 255;
-        --text-secondary: 218 255 251;
+        --text: 255 255 255;
+        --title: 218 255 251;
         --text-details: 100 204 197;
         --header-bg: 44 62 80;
     }
@@ -33,11 +33,10 @@ body {
 
 p,
 span,
-a,
 h1,
 h2,
 h3 {
-    @apply text-primary_tx
+    @apply text-text
 }
 
 .logo-section div:hover~span {
@@ -74,4 +73,10 @@ h3 {
     50% {
         border-color: transparent
     }
+}
+
+.mini-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }

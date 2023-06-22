@@ -9,8 +9,8 @@ export default {
       colors: {
         primary_bg: 'rgba(var(--bg-primary) / <alpha-value>)',
         secondary_bg: 'rgba(var(--bg-secondary) / <alpha-value>)',
-        primary_tx: 'rgba(var(--text-primary) / <alpha-value>)',
-        secondary_tx: 'rgba(var(--text-secondary) / <alpha-value>)',
+        text: 'rgba(var(--text) / <alpha-value>)',
+        title: 'rgba(var(--title) / <alpha-value>)',
         details: 'rgba(var(--text-details) / <alpha-value>)',
         header: 'rgba(var(--header-bg) / <alpha-value>)',
       }
