@@ -3,11 +3,9 @@ import Home from './routes/Home'
 import AboutMe from './routes/AboutMe'
 import NotFound from './routes/NotFound'
 import Header from './components/body/Header'
-// import useTheme from './hooks/useTheme'
 import Contact from './routes/Contact'
 
 const App = () => {
-    // const PAGE_THEME = useTheme().theme
 
     return (
         <div>

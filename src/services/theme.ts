@@ -3,7 +3,10 @@ export const enum THEME {
     LIGHT = 'LIGHT'
 }
 
-export type ThemeType = THEME
+export function switchTheme(theme: string) {
+    const changeObject: { [key: string]: THEME } = { DARK: THEME.LIGHT, LIGHT: THEME.DARK }
+    return changeObject[theme]
+}
 
 export function getActualTheme() {
     let actualTheme = localStorage.getItem('theme')
@@ -13,4 +16,8 @@ export function getActualTheme() {
     }
 
     return actualTheme
+}
+
+export function setThemeInStorage(theme: string) {
+    localStorage.setItem('theme', theme)
 }

@@ -3,6 +3,7 @@ import { HashRouter } from 'react-router-dom'
 import './styles/general.css'
 import App from './App'
 
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <HashRouter>
     <App />

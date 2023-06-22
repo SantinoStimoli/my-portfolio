@@ -7,6 +7,11 @@
         --bg-primary: 156 94 94;
         --bg-secondary: 111 114 185;
     }
+
+    .dark-mode {
+        --bg-primary: 15 4 94;
+        --bg-secondary: 11 11 15;
+    }
 }
 
 .logo-section div:hover~span {
