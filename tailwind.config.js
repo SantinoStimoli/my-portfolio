@@ -12,6 +12,7 @@ export default {
         primary_tx: 'rgba(var(--text-primary) / <alpha-value>)',
         secondary_tx: 'rgba(var(--text-secondary) / <alpha-value>)',
         details: 'rgba(var(--text-details) / <alpha-value>)',
+        header: 'rgba(var(--header-bg) / <alpha-value>)',
       }
     },
   },

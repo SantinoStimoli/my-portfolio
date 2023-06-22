@@ -1,6 +1,12 @@
+import Image from "../components/body/presentation/Image"
+import Presentation from "../components/body/presentation/Presentation"
+
 const Home = () => {
     return (
-        <div>Home</div>
+        <section className="flex">
+            <Image />
+            <Presentation />
+        </section>
     )
 }
 

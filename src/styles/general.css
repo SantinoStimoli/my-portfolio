@@ -9,6 +9,7 @@
         --text-primary: 255 255 255;
         --text-secondary: 184 124 76;
         --text-details: 170 187 204;
+        --header-bg: 44 62 80;
     }
 
     .dark-mode {
@@ -17,6 +18,7 @@
         --text-primary: 255 255 255;
         --text-secondary: 218 255 251;
         --text-details: 100 204 197;
+        --header-bg: 44 62 80;
     }
 }
 
@@ -44,4 +46,32 @@ h3 {
 
 .hover-box {
     @apply absolute bg-black/10 backdrop-blur-lg rounded transition-all duration-[400ms] ease-in-out z-10 opacity-0;
+}
+
+
+.my-image {
+    clip-path: circle(50% at 50% 50%);
+}
+
+#typing {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 24ch;
+    animation: typing 2s steps(24), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(24), blink .5s infinite step-end alternate;
+}
+
+@keyFrames typing {
+    from {
+        width: 0
+    }
+}
+
+@keyFrames blink {
+    50% {
+        border-color: transparent
+    }
 }
