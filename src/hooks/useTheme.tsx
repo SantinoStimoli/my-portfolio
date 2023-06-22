@@ -5,7 +5,6 @@ const useTheme = () => {
 
     const [theme, setTheme] = useState<string>(getActualTheme())
 
-
     const changeTheme = () => {
         setTheme(switchTheme(theme))
         theme === THEME.LIGHT ? document.body.classList.add("dark-mode") : document.body.classList.remove("dark-mode");
