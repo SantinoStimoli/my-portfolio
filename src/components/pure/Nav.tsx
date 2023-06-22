@@ -11,15 +11,17 @@ const Nav = ({ navList }: { navList: string[] }) => {
     useEffect(() => moveBox(), [props])
 
     function hideBox() {
-        hoverElement.current.style.opacity = 0
+        if (hoverElement.current !== null) hoverElement.current.style.opacity = '0'
     }
 
     function moveBox() {
-        hoverElement.current.style.opacity = 1
-        hoverElement.current.style.left = props?.left + 'px'
-        hoverElement.current.style.top = props?.top + 'px'
-        hoverElement.current.style.width = props?.width + 'px'
-        hoverElement.current.style.height = props?.height + 'px'
+        if (hoverElement.current !== null) {
+            hoverElement.current.style.opacity = '1'
+            hoverElement.current.style.left = props?.left + 'px'
+            hoverElement.current.style.top = props?.top + 'px'
+            hoverElement.current.style.width = props?.width + 'px'
+            hoverElement.current.style.height = props?.height + 'px'
+        }
     }
 
     return (

@@ -12,9 +12,8 @@ export function getActualTheme() {
     let actualTheme = localStorage.getItem('theme')
     if (actualTheme === null) {
         localStorage.setItem('theme', THEME.LIGHT)
-        return THEME.LIGHT
+        actualTheme = THEME.LIGHT
     }
-
     return actualTheme
 }
 
