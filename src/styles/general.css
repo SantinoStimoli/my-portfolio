@@ -75,8 +75,8 @@ h3 {
     }
 }
 
-.mini-card {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+#name {
+    background: -webkit-linear-gradient(rgba(var(--text-details)), rgba(var(--text-details)), rgba(var(--bg-primary)));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

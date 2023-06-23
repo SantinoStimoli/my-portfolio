@@ -1,24 +1,26 @@
 import { useState } from 'react'
-import IMG from '../../assets/Ta-Te-Ti.png'
 
 interface Props {
     img: string
     repo: string
     link: string
     title: string
-    description: string
 }
 
-const Card = ({ img = IMG, repo = 'https://github.com/santino-stimoli/Ta-Te-Ti', link = 'https://santino-stimoli.github.io/Ta-Te-Ti/', title = 'Ta Te Ti' }: Props) => {
+const Card = ({ img, repo, link, title }: Props) => {
     const [hover, setHover] = useState(false)
 
     return (
-        <a href={link} target='_blank' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className={"mini-card border rounded w-[250px] h-[150px] flex items-end cursor-pointer " + (hover && ' blur-[1px] relative ')} style={{ backgroundImage: `url(${img})` }}>
-            <div>
-                <h1 className='text-2xl pl-2.5 pb-1'>{title}</h1>
-                <span><a href={link}></a></span>
-            </div>
-        </a >
+        <div onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} className={'max-h-[150px] transition-all duration-200' + (hover ? ' scale-110' : '')}>
+            <a href={link} target='_blank' className={"border rounded w-[250px] h-[150px] flex items-end cursor-pointer hover:border-details bg-no-repeat  " + (hover ? 'blur-[1px] bg-[length:130%]' : 'bg-cover')} style={{ backgroundImage: `url(${img})`, backgroundPosition: '50% 50%' }} />
+            <a href={link} target='_blank' className='flex items-center relative bottom-[38px] pl-2'>
+                <h1 className={'text-2xl mr-3 ' + (hover && 'text-details')}>{title}</h1>
+                <div className='flex gap-2 pt-2'>
+                    <a href={repo} className='hover:text-details transition duration-0' target='_blank'><i className='bx bxl-github bx-sm' /></a>
+                    <a href={link} className='hover:text-details transition duration-0' target='_blank'><i className='bx bx-code-block bx-sm' /></a>
+                </div>
+            </a >
+        </div>
     )
 }
 
