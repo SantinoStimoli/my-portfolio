@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import navFormater from '../../services/navFormater'
 import { useRef } from 'react'
+import { Position } from '../../interfaces/functionProps';
 
 interface Props {
     to: string

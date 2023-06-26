@@ -1,7 +1,7 @@
 import Image from "../components/body/presentation/Image"
 import Presentation from "../components/body/presentation/Presentation"
 
-const Home = () => {
+const Summary = () => {
     return (
         <section className="flex">
             <Image />
@@ -10,4 +10,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Summary

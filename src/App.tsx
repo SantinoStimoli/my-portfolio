@@ -1,9 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './routes/Home'
-import AboutMe from './routes/AboutMe'
-import NotFound from './routes/NotFound'
+import Summary from './pages/Summary'
+import NotFound from './pages/NotFound'
 import Header from './components/body/Header'
-import Contact from './routes/Contact'
+import Tecnologies from './pages/Tecnologies'
 
 const App = () => {
 
@@ -11,9 +10,12 @@ const App = () => {
         <div>
             <Header />
             <Routes>
-                <Route path='' element={<Home />} />
-                <Route path='sobre-mi' element={<AboutMe />} />
-                <Route path='contacto' element={<Contact />} />
+                <Route path='' element={
+                    <main>
+                        <Summary />
+                        <Tecnologies />
+                    </main>
+                } />
                 <Route path='*' element={<NotFound />} />
             </Routes>
         </div>

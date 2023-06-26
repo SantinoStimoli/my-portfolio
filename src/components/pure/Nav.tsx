@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import NavElement from "./NavElement"
+import { Position } from "../../interfaces/functionProps"
 
 const Nav = ({ navList }: { navList: string[] }) => {
 
