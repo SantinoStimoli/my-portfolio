@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import Summary from './pages/Summary'
 import NotFound from './pages/NotFound'
 import Header from './components/body/Header'
-import Tecnologies from './pages/Tecnologies'
+import Technologies from './pages/Technologies'
 
 const App = () => {
 
@@ -11,9 +11,9 @@ const App = () => {
             <Header />
             <Routes>
                 <Route path='' element={
-                    <main>
+                    <main className=' flex flex-col gap-10'>
                         <Summary />
-                        <Tecnologies />
+                        <Technologies />
                     </main>
                 } />
                 <Route path='*' element={<NotFound />} />

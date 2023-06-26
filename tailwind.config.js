@@ -13,6 +13,10 @@ export default {
         title: 'rgba(var(--title) / <alpha-value>)',
         details: 'rgba(var(--text-details) / <alpha-value>)',
         header: 'rgba(var(--header-bg) / <alpha-value>)',
+      },
+
+      screens: {
+        'xl': '1333px',
       }
     },
   },

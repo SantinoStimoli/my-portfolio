@@ -3,7 +3,7 @@ import Presentation from "../components/body/presentation/Presentation"
 
 const Summary = () => {
     return (
-        <section className="flex">
+        <section className="flex max-xl:flex-col">
             <Image />
             <Presentation />
         </section>
