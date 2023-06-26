@@ -1,4 +1,4 @@
-import Stack from "../components/body/Stack"
+import Stack from "../components/pure/Stack"
 import { DTechnologies } from "../data/data"
 
 const Technologies = () => {

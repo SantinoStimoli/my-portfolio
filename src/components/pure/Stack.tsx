@@ -13,7 +13,7 @@ const Stack = ({ title, technologies }: IStack) => {
             <h1 className='uppercase text-2xl font-bold mb-3'>{title}</h1>
             <div className='flex flex-wrap items-center justify-center gap-1'>
                 {technologies.map((e, i) => {
-                    return (<span className='px-1 bg-secondary_bg rounded' key={i}>{e}</span>)
+                    return (<span className='px-1 bg-secondary_bg rounded flex items-center gap-1' key={i}> <i className={e.code + ' pt-0.5'} /> {e.name}</span>)
                 })}
             </div>
         </section>

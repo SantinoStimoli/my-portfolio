@@ -10,7 +10,7 @@ export const Projects: Project[] = [
 ]
 
 export const DTechnologies: IStack[] = [
-    { title: 'FrontEnd', technologies: ['HTML', 'CSS', 'Tailwind', 'Bootstrapt', 'JavaScript', 'TypeScript', 'React', 'Angular', 'Vue'] },
-    { title: 'BackEnd', technologies: ['JAVA', 'Spring', 'SpringBoot'] },
-    { title: 'Diseño', technologies: ['Illustrator', 'Photoshop', 'Canva'] }
+    { title: 'FrontEnd', technologies: [{ name: 'HTML', code: 'bx bxl-html5' }, { name: 'CSS', code: 'bx bxl-css3' }, { name: 'Tailwind', code: 'bx bxl-tailwind-css' }, { name: 'Bootstrap', code: 'bx bxl-bootstrap' }, { name: 'JavaScript', code: 'bx bxl-javascript' }, { name: 'TypeScript', code: 'bx bxl-typescript' }, { name: 'React', code: 'bx bxl-react' }, { name: 'Angular', code: 'bx bxl-angular' }, { name: 'Vue', code: 'bx bxl-vuejs' }] },
+    { title: 'BackEnd', technologies: [{ name: 'JAVA', code: 'bx bxl-java' }, { name: 'Spring', code: 'bx bxl-spring-boot' }] },
+    { title: 'Diseño', technologies: [{ name: 'Illustrator', code: 'bx bxl-adobe' }, { name: 'Photoshop', code: 'bx bxl-adobe' }, { name: 'Premiere', code: 'bx bxl-adobe' }] }
 ]

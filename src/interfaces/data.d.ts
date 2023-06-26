@@ -6,7 +6,12 @@ export interface Project {
     title: string
 }
 
+interface Technologies {
+    name: string
+    code: string
+}
+
 export interface IStack {
     title: string
-    technologies: string[]
+    technologies: Technologies[]
 }

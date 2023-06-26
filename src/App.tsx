@@ -3,6 +3,7 @@ import Summary from './pages/Summary'
 import NotFound from './pages/NotFound'
 import Header from './components/body/Header'
 import Technologies from './pages/Technologies'
+import AboutMe from './components/body/AboutMe'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
                     <main className=' flex flex-col gap-10'>
                         <Summary />
                         <Technologies />
+                        <AboutMe />
                     </main>
                 } />
                 <Route path='*' element={<NotFound />} />

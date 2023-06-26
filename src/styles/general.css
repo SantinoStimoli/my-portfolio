@@ -8,7 +8,7 @@
         --bg-secondary: 216 211 205;
         --text: 105 116 118;
         --title: 105 116 118;
-        --text-details: 16 131 214;
+        --text-details: 100 204 197;
         --header-bg: 160 167 173;
     }
 
@@ -17,7 +17,6 @@
         --bg-secondary: 39 55 77;
         --text: 255 255 255;
         --title: 218 255 251;
-        --text-details: 100 204 197;
         --header-bg: 44 62 80;
     }
 }
