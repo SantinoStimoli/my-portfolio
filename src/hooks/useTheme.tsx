@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
 import { THEME, getActualTheme, setThemeInStorage, switchTheme } from '../services/theme'
 
-const useTheme = () => {
+const useTheme = (): { theme: string; changeTheme: () => void } => {
   const [theme, setTheme] = useState<string>(getActualTheme())
 
-  const changeTheme = () => {
+  const changeTheme = (): void => {
     setTheme(switchTheme(theme))
-    theme === THEME.LIGHT ? document.body.classList.add('dark-mode') : document.body.classList.remove('dark-mode')
+    theme === THEME.LIGHT
+      ? document.body.classList.add('dark-mode')
+      : document.body.classList.remove('dark-mode')
   }
 
   useEffect(() => {

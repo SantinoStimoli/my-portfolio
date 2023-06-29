@@ -1,4 +1,3 @@
-
 export interface Project {
   img: string
   repo: string
