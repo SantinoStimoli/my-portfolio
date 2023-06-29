@@ -1,6 +1,6 @@
 export interface Position {
-    left: number | null | undefined
-    top: number | null | undefined
-    width: number | null | undefined
-    height: number | null | undefined
+  left: number | null | undefined | string
+  top: number | null | undefined | string
+  width: number | null | undefined | string
+  height: number | null | undefined | string
 }

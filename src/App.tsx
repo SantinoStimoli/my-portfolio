@@ -6,8 +6,7 @@ import Technologies from './pages/Technologies'
 import AboutMe from './components/body/AboutMe'
 
 const App = () => {
-
-    return (
+  return (
         <div>
             <Header />
             <Routes>
@@ -21,7 +20,7 @@ const App = () => {
                 <Route path='*' element={<NotFound />} />
             </Routes>
         </div>
-    )
+  )
 }
 
 export default App
