@@ -95,7 +95,7 @@ p{
 }
 
 .page-section{
-    @apply snap-center flex items-center justify-center xl:h-screen w-full
+    @apply snap-center flex items-center justify-center xl:min-h-screen w-full
 }
 
 main{
