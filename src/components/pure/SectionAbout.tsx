@@ -7,7 +7,11 @@ const SectionAbout: React.FC<{ title: string; content: string; right?: boolean }
   content: string
   right?: boolean
 }) => (
-  <section className={'flex items-center gap-5  ' + (right ?? false ? ' flex-row-reverse' : '')}>
+  <section
+    className={
+      'flex items-center gap-5 max-md:flex-col  ' + (right ?? false ? ' md:flex-row-reverse' : '')
+    }
+  >
     <div className='w-40'>
       {right ?? false ? (
         <svg
@@ -35,12 +39,19 @@ const SectionAbout: React.FC<{ title: string; content: string; right?: boolean }
     <div className='w-full'>
       <h2
         className={
-          'text-4xl font-bold uppercase mb-3 ' + (right ?? false ? 'text-right' : 'text-left')
+          'text-4xl max-md:text-center font-bold uppercase mb-3 ' +
+          (right ?? false ? 'md:text-right' : 'md:text-left')
         }
       >
         {title}
       </h2>
-      <p className={'text-lg ' + (right ?? false ? 'text-right' : 'text-left')}>{content}</p>
+      <p
+        className={
+          'text-lg max-md:text-center ' + (right ?? false ? 'md:text-right' : 'md:text-left')
+        }
+      >
+        {content}
+      </p>
     </div>
   </section>
 )

@@ -4,6 +4,7 @@ import NotFound from './pages/NotFound'
 import Header from './components/body/Header'
 import Technologies from './pages/Technologies'
 import AboutMe from './pages/AboutMe'
+import Studies from './pages/Studies'
 
 const App: React.FC = () => {
   return (
@@ -13,9 +14,10 @@ const App: React.FC = () => {
         <Route
           path=''
           element={
-            <main className='relative w-full h-screen overflow-auto snap-y snap-mandatory'>
+            <main>
               <Summary />
               <Technologies />
+              <Studies />
               <AboutMe />
             </main>
           }

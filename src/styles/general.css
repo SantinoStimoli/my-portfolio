@@ -38,6 +38,10 @@ h3 {
     @apply text-text
 }
 
+.title{
+    @apply text-4xl uppercase text-center font-bold mb-10
+}
+
 .logo-section div:hover~span {
     @apply left-0 opacity-100
 }
@@ -98,5 +102,9 @@ h3 {
 }
 
 .page-section{
-    @apply snap-center h-screen flex items-center justify-center
+    @apply xl:snap-center flex items-center justify-center xl:h-screen
+}
+
+main{
+    @apply max-xl:relative max-xl:w-full max-xl:h-screen max-xl:overflow-auto max-xl:snap-y max-xl:snap-mandatory max-xl:gap-44 max-xl:flex max-xl:flex-col
 }
