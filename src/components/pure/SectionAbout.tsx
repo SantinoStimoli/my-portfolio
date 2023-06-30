@@ -9,7 +9,8 @@ const SectionAbout: React.FC<{ title: string; content: string; right?: boolean }
 }) => (
   <section
     className={
-      'flex items-center gap-5 max-md:flex-col  ' + (right ?? false ? ' md:flex-row-reverse' : '')
+      'flex items-center gap-5 max-md:flex-col lg:px-5 xl:px-20  ' +
+      (right ?? false ? ' md:flex-row-reverse' : '')
     }
   >
     <div className='w-40'>

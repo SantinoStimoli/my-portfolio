@@ -44,7 +44,7 @@ const Presentation: React.FC = () => {
         <h2 className='text-xl mb-5'>Ultimos proyectos</h2>
         <div className='flex flex-wrap justify-around gap-5'>
           {Projects.slice(0, 2).map((e: Project, i: number) => {
-            return <Card key={i} img={e.img} link={e.link} repo={e.repo} title={e.title} />
+            return <Card key={i} project={e} small />
           })}
         </div>
       </section>

@@ -3,6 +3,8 @@ import VALIDATION_SOFTWARE from '../assets/Validation-Software.png'
 import TECNICORT from '../assets/Tecnicort.png'
 import { type Study, type IStack, type Project } from '../interfaces/data'
 
+export const NavLinks = ['Inicio', 'Tecnologías', 'Proyectos', 'Estudios', 'Sobre mi', 'Contacto']
+
 export const Projects: Project[] = [
   {
     img: TATETI,

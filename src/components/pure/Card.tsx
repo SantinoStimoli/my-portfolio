@@ -1,71 +1,37 @@
-import { useState } from 'react'
+import { type Project } from '../../interfaces/data'
 
-interface Props {
-  img: string
-  repo: string
-  link: string
-  title: string
-}
-
-const Card: React.FC<Props> = ({ img, repo, link, title }: Props) => {
-  const [hover, setHover] = useState(false)
-
+const Card: React.FC<{ project: Project; small?: boolean }> = ({
+  project,
+  small = false,
+}: {
+  project: Project
+  small?: boolean
+}) => {
   return (
     <div
-      onMouseEnter={() => {
-        setHover(true)
-      }}
-      onMouseLeave={() => {
-        setHover(false)
-      }}
-      className={'max-h-[150px] transition-all duration-200' + (hover ? ' scale-110' : '')}
+      className={
+        'box overflow-hidden text-center relative rounded bg-center bg-[length:140%] hover:bg-[length:160%] bg-no-repeat transition-all' +
+        (small ?? false ? ' w-[250px] h-[150px]' : ' w-[300px] h-[200px]')
+      }
+      style={{ backgroundImage: `url(${project.img})` }}
     >
-      <a
-        href={link}
-        target='_blank'
-        className={
-          'border rounded w-[250px] h-[150px] flex items-end cursor-pointer hover:border-details bg-no-repeat duration-200' +
-          (hover ? ' blur-[1px] bg-[length:130%]' : ' bg-cover')
-        }
-        style={{ backgroundImage: `url(${img})`, backgroundPosition: '50% 50%' }}
-        rel='noreferrer'
-      />
-      <a
-        href={link}
-        target='_blank'
-        className={
-          'flex flex-wrap items-center relative bottom-[38px] w-[250px] pl-2 transition-all ' +
-          (hover ? 'opacity-100' : 'opacity-0')
-        }
-        rel='noreferrer'
-      >
-        <h1
-          className={
-            'bg-black/25 rounded px-1.5 tracking-tighter text-xl text-white mr-3 ' +
-            (hover ? 'text-details' : '')
-          }
+      <span className='original '>
+        <h1 className='font-bold text-xl uppercase bg-secondary_bg/50 px-1.5 '>{project.title}</h1>
+      </span>
+      <div className='overlay w-full h-full absolute left-0 right-0 top-0 bottom-0 '>
+        <div
+          className={'flex justify-center gap-3 bg-black/50 h-full' + (small ? ' pt-2' : ' pt-1.5')}
         >
-          {title}
-        </h1>
-        <div className='bg-black/25 flex gap-2 items-center rounded p-0.5 pb-0'>
-          <a
-            href={repo}
-            className='hover:text-details transition duration-0 flex items-center'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <i className='bx bxl-github bx-sm' />
+          <a target='_blank' href={project.link} rel='noreferrer'>
+            <i
+              className={'bx bx-window-open hover:text-details' + (small ? ' bx-sm' : ' bx-md')}
+            ></i>
           </a>
-          <a
-            href={link}
-            className='hover:text-details transition duration-0 flex items-center'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <i className='bx bx-code-block bx-sm' />
+          <a target='_blank' href={project.repo} rel='noreferrer'>
+            <i className={'bx bxl-github hover:text-details' + (small ? ' bx-sm' : ' bx-md')}></i>
           </a>
         </div>
-      </a>
+      </div>
     </div>
   )
 }

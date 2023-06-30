@@ -5,6 +5,7 @@ import Header from './components/body/Header'
 import Technologies from './pages/Technologies'
 import AboutMe from './pages/AboutMe'
 import Studies from './pages/Studies'
+import MyProjects from './pages/MyProjects'
 
 const App: React.FC = () => {
   return (
@@ -14,9 +15,10 @@ const App: React.FC = () => {
         <Route
           path=''
           element={
-            <main className='flex items-center flex-col'>
+            <main className='flex items-center flex-col xl:relative xl:w-full xl:h-screen xl:overflow-auto xl:snap-y xl:snap-mandatory max-xl:gap-28 xl:flex xl:flex-col pb-10'>
               <Summary />
               <Technologies />
+              <MyProjects />
               <Studies />
               <AboutMe />
             </main>
