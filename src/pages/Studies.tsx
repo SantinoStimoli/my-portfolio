@@ -1,8 +1,8 @@
-import Steps from '../components/Steps'
+import Steps from '../components/body/Steps'
 
 const Studies: React.FC = () => {
   return (
-    <article className='page-section flex-col'>
+    <article id='estudios' className='page-section container flex-col'>
       <h1 className='title'>Estudios</h1>
       <Steps />
     </article>

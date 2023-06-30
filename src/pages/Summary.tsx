@@ -3,7 +3,7 @@ import Presentation from '../components/body/presentation/Presentation'
 
 const Summary: React.FC = () => {
   return (
-    <article id='inicio' className='flex max-xl:flex-col page-section'>
+    <article id='inicio' className='flex max-xl:flex-col page-section w-full'>
       <Image />
       <Presentation />
     </article>

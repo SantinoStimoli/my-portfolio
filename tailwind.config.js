@@ -12,10 +12,11 @@ export default {
         text: 'rgba(var(--text) / <alpha-value>)',
         title: 'rgba(var(--title) / <alpha-value>)',
         details: 'rgba(var(--text-details) / <alpha-value>)',
-        header: 'rgba(var(--header-bg) / <alpha-value>)',
+        alternative_bg: 'rgba(var(--alternative-bg) / <alpha-value>)',
       },
 
       screens: {
+        'xs': '400px',
         'xl': '1333px',
       }
     },

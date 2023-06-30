@@ -45,11 +45,7 @@ const SectionAbout: React.FC<{ title: string; content: string; right?: boolean }
       >
         {title}
       </h2>
-      <p
-        className={
-          'text-lg max-md:text-center ' + (right ?? false ? 'md:text-right' : 'md:text-left')
-        }
-      >
+      <p className={'max-md:text-center ' + (right ?? false ? 'md:text-right' : 'md:text-left')}>
         {content}
       </p>
     </div>

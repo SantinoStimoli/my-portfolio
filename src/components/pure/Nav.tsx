@@ -31,8 +31,11 @@ const Nav: React.FC<{ navList: string[] }> = ({ navList }: { navList: string[] }
   }
 
   return (
-    <ul className='flex justify-center text-white'>
-      <div ref={hoverElement} className='hover-box' />
+    <ul className='flex justify-center text-white items-center max-[500px]:hidden'>
+      <div
+        ref={hoverElement}
+        className='hover-box absolute bg-black/10 backdrop-blur-lg rounded transition-all duration-[400ms] ease-in-out z-10 opacity-0'
+      />
       {navList.map((navLink: string, i: number) => {
         return <NavElement key={i} to={navLink} setProps={setProps} hideBox={hideBox} />
       })}

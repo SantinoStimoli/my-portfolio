@@ -14,7 +14,7 @@ const App: React.FC = () => {
         <Route
           path=''
           element={
-            <main>
+            <main className='flex  items-center flex-col'>
               <Summary />
               <Technologies />
               <Studies />

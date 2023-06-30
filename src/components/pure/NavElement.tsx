@@ -32,11 +32,10 @@ const NavElement: React.FC<Props> = ({ to, setProps, hideBox }: Props) => {
       onMouseLeave={() => {
         hideBox()
       }}
-      className='px-3 py-2 my-0.5 rounded z-10'
-      href='javascript:void(0)'
       onClick={() => {
         scrollToElement(navFormater(to))
       }}
+      className='max-sm:text-xs px-1 py-2 sm:px-3 sm:py-2 rounded z-10 cursor-pointer'
     >
       {to}
     </a>

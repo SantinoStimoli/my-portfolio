@@ -1,4 +1,6 @@
-const Design: React.FC<{ size: number }> = ({ size }: { size: number }) => {
+import { type SVG } from '../../interfaces/data'
+
+const Design: React.FC<SVG> = ({ size = 50 }: SVG) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

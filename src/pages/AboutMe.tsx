@@ -1,7 +1,7 @@
 import SectionAbout from '../components/pure/SectionAbout'
 
 const AboutMe: React.FC = () => (
-  <article id='sobre-mi' className='page-section mb-10 flex flex-col gap-10 px-10'>
+  <article id='sobre-mi' className='page-section container flex-col gap-10 xs:px-10 max-xs:px-3'>
     <section className='mb-5'>
       <h1 className='title'>Sobre mi</h1>
       <p className='text-center'>
