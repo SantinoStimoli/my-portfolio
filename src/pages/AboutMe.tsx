@@ -1,7 +1,7 @@
-import SectionAbout from '../pure/SectionAbout'
+import SectionAbout from '../components/pure/SectionAbout'
 
 const AboutMe: React.FC = () => (
-  <article className='px-[25%] mb-10 flex flex-col gap-10'>
+  <article id='sobre-mi' className='page-section px-[25%] mb-10 flex flex-col gap-10'>
     <section className='mb-5'>
       <h1 className='text-6xl mb-5 text-center'>Sobre mi</h1>
       <p className='text-center'>

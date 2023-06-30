@@ -3,7 +3,7 @@ import Summary from './pages/Summary'
 import NotFound from './pages/NotFound'
 import Header from './components/body/Header'
 import Technologies from './pages/Technologies'
-import AboutMe from './components/body/AboutMe'
+import AboutMe from './pages/AboutMe'
 
 const App: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const App: React.FC = () => {
         <Route
           path=''
           element={
-            <main className=' flex flex-col gap-10'>
+            <main className='relative w-full h-screen overflow-auto snap-y snap-mandatory'>
               <Summary />
               <Technologies />
               <AboutMe />

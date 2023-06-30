@@ -3,10 +3,10 @@ import Presentation from '../components/body/presentation/Presentation'
 
 const Summary: React.FC = () => {
   return (
-    <section className='flex max-xl:flex-col mb-10'>
+    <article id='inicio' className='flex max-xl:flex-col page-section'>
       <Image />
       <Presentation />
-    </section>
+    </article>
   )
 }
 
