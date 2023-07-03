@@ -1,7 +1,7 @@
 import TATETI from '../assets/Ta-Te-Ti.png'
 import VALIDATION_SOFTWARE from '../assets/Validation-Software.png'
 import TECNICORT from '../assets/Tecnicort.png'
-import { type Study, type IStack, type Project } from '../interfaces/data'
+import { type Study, type IStack, type Project, type ISocial } from '../interfaces/data'
 
 export const NavLinks = ['Inicio', 'Tecnologías', 'Proyectos', 'Estudios', 'Sobre mi', 'Contacto']
 
@@ -109,5 +109,36 @@ export const studies: Study[] = [
       { name: 'React', code: 'bx bxl-react' },
     ],
     time: 2,
+  },
+]
+
+export const socialNetworks: ISocial[] = [
+  {
+    name: 'LinkedIn',
+    code: 'bx bxl-linkedin-square',
+    link: 'https://www.linkedin.com/in/santino-stimoli/',
+    shortedLink: '/santino-stimoli/',
+    description:
+      'Aquí subo actualizaciones regularmente sobre cómo voy desarrollando todos mis proyectos.',
+  },
+  {
+    name: 'Github',
+    code: 'bx bxl-github',
+    link: 'https://github.com/santino-stimoli/',
+    shortedLink: '/santino-stimoli/',
+    description:
+      'Aquí se encuentran todos mis proyectos alojados, cada uno con su respectivo código.',
+  },
+  {
+    name: 'Gmail',
+    code: 'bx bxl-gmail',
+    link: 'mailto:santinostimoli@gmail.com',
+    shortedLink: 'santinostimoli@gmail.com',
+  },
+  {
+    name: 'Phone',
+    code: 'bx bxs-phone',
+    link: 'tel:+5491134310411',
+    shortedLink: '+54 9 11 3431-0411',
   },
 ]

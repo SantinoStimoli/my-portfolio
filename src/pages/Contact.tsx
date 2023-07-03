@@ -1,8 +1,11 @@
+import Social from '../components/body/Social'
+
 const Contact: React.FC = () => {
   return (
-    <section className='page-section'>
+    <article id='contacto' className='page-section flex-col'>
       <h1 className='title'>Contáctame</h1>
-    </section>
+      <Social />
+    </article>
   )
 }
 

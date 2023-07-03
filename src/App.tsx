@@ -7,6 +7,7 @@ import AboutMe from './pages/AboutMe'
 import Studies from './pages/Studies'
 import MyProjects from './pages/MyProjects'
 import Contact from './pages/Contact'
+import Footer from './components/body/Footer'
 
 const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

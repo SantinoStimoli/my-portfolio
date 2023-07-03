@@ -27,3 +27,10 @@ export interface Study {
 export interface SVG {
   size?: number
 }
+export interface ISocial {
+  code: string
+  name: string
+  link: string
+  shortedLink: string
+  description?: string
+}
