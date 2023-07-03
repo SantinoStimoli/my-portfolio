@@ -6,6 +6,7 @@ import Technologies from './pages/Technologies'
 import AboutMe from './pages/AboutMe'
 import Studies from './pages/Studies'
 import MyProjects from './pages/MyProjects'
+import Contact from './pages/Contact'
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
               <MyProjects />
               <Studies />
               <AboutMe />
+              <Contact />
             </main>
           }
         />

@@ -1,20 +1,16 @@
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
 import { useEffect, useRef, useState } from 'react'
 import NavElement from './NavElement'
 import { type Position } from '../../interfaces/functionProps'
 
 const Nav: React.FC<{ navList: string[] }> = ({ navList }: { navList: string[] }) => {
-  const [props, setProps] = useState<Position>({
-    left: '0px',
-    height: '0px',
-    top: '0px',
-    width: '0px',
-  })
+  const [positionProps, setPositionProps] = useState<Position>()
 
   const hoverElement = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     moveBox()
-  }, [props])
+  }, [positionProps])
 
   function hideBox(): void {
     if (hoverElement.current !== null) hoverElement.current.style.opacity = '0'
@@ -23,21 +19,23 @@ const Nav: React.FC<{ navList: string[] }> = ({ navList }: { navList: string[] }
   function moveBox(): void {
     if (hoverElement.current !== null) {
       hoverElement.current.style.opacity = '1'
-      hoverElement.current.style.left = props !== undefined ? props.left + 'px' : ''
-      hoverElement.current.style.top = props !== undefined ? props.top + 'px' : ''
-      hoverElement.current.style.width = props !== undefined ? props.width + 'px' : ''
-      hoverElement.current.style.height = props !== undefined ? props.height + 'px' : ''
+      hoverElement.current.style.left = positionProps !== undefined ? positionProps.left + 'px' : ''
+      hoverElement.current.style.top = positionProps !== undefined ? positionProps.top + 'px' : ''
+      hoverElement.current.style.width =
+        positionProps !== undefined ? positionProps.width + 'px' : ''
+      hoverElement.current.style.height =
+        positionProps !== undefined ? positionProps.height + 'px' : ''
     }
   }
 
   return (
-    <ul className='flex justify-center text-white items-center max-[500px]:hidden'>
+    <ul className='flex justify-center text-white items-center max-[550px]:hidden'>
       <div
         ref={hoverElement}
         className='hover-box absolute bg-black/10 backdrop-blur-lg rounded transition-all duration-[400ms] ease-in-out z-10 opacity-0'
       />
       {navList.map((navLink: string, i: number) => {
-        return <NavElement key={i} to={navLink} setProps={setProps} hideBox={hideBox} />
+        return <NavElement key={i} to={navLink} setProps={setPositionProps} hideBox={hideBox} />
       })}
     </ul>
   )
