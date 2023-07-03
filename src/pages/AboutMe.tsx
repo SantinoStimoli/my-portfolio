@@ -3,7 +3,7 @@ import SectionAbout from '../components/pure/SectionAbout'
 const AboutMe: React.FC = () => (
   <article id='sobre-mi' className='page-section container flex-col gap-10 xs:px-10 max-xs:px-3'>
     <section className='mb-5'>
-      <h1 className='title'>Sobre mi</h1>
+      <h2 className='title'>Sobre mi</h2>
       <p className='text-center lg:px-5 xl:px-20'>
         Soy una persona con una excelente capacidad de comunicación, tanto verbal como escrita, lo
         que me permite expresarme de manera clara y efectiva. Soy un buen colaborador y tengo

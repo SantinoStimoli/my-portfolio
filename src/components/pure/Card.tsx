@@ -16,7 +16,7 @@ const Card: React.FC<{ project: Project; small?: boolean }> = ({
       style={{ backgroundImage: `url(${project.img})` }}
     >
       <span className='original '>
-        <h1 className='font-bold text-xl uppercase bg-secondary_bg/50 px-1.5 '>{project.title}</h1>
+        <h3 className='font-bold text-xl uppercase bg-secondary_bg/50 px-1.5 '>{project.title}</h3>
       </span>
       <div className='overlay w-full h-full absolute left-0 right-0 top-0 bottom-0 '>
         <div

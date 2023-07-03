@@ -9,7 +9,7 @@ const Stack: React.FC<{ stack: IStack }> = ({ stack }: { stack: IStack }) => {
       {stack.title === 'FrontEnd' && <FrontEnd size={150} />}
       {stack.title === 'BackEnd' && <BackEnd size={150} />}
       {stack.title === 'Diseño' && <Design size={150} />}
-      <h1 className='uppercase text-2xl font-bold mb-3'>{stack.title}</h1>
+      <h3 className='uppercase text-2xl font-bold mb-3'>{stack.title}</h3>
       <div className='flex flex-wrap items-center justify-center gap-1'>
         {stack.technologies.map((e: Technologies, i: number) => {
           return (
