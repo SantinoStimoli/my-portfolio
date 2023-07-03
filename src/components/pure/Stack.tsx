@@ -13,8 +13,11 @@ const Stack: React.FC<{ stack: IStack }> = ({ stack }: { stack: IStack }) => {
       <div className='flex flex-wrap items-center justify-center gap-1'>
         {stack.technologies.map((e: Technologies, i: number) => {
           return (
-            <span className='px-1 bg-secondary_bg rounded flex items-center gap-1' key={i}>
-              <i className={e.code + ' pt-0.5'} /> {e.name}
+            <span
+              className='px-1.5 py-0.5 bg-secondary_bg rounded flex items-center gap-1  text-white'
+              key={i}
+            >
+              <i className={e.code + ' pt-0.5 text-white'} /> {e.name}
             </span>
           )
         })}

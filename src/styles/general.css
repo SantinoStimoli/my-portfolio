@@ -5,18 +5,18 @@
 @layer base {
   :root {
     --bg-primary: 251 250 255;
-    --bg-secondary: 216 211 205;
-    --text: 105 116 118;
-    --title: 105 116 118;
+    --bg-secondary: 160 167 173;
+    --text: 102 102 102;
+    /* --title: 105 116 118; */
     --text-details: 100 204 197;
-    --alternative-bg: 160 167 173;
+    --alternative-bg: 127 143 166;
   }
 
   .dark-mode {
     --bg-primary: 0 28 48;
     --bg-secondary: 39 55 77;
     --text: 255 255 255;
-    --title: 218 255 251;
+    /* --title: 218 255 251; */
     --alternative-bg: 44 62 80;
   }
 }
@@ -31,6 +31,7 @@ body {
 }
 
 p,
+i,
 span,
 h1,
 h2,
@@ -72,11 +73,7 @@ p {
 }
 
 #name {
-  background: -webkit-linear-gradient(
-    rgba(var(--text-details)),
-    rgba(var(--text-details)),
-    rgba(var(--bg-primary))
-  );
+  background: -webkit-linear-gradient(rgba(var(--text-details)), rgba(var(--bg-secondary)));
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -95,7 +92,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-details/100;
+  @apply bg-details;
 }
 
 .page-section {

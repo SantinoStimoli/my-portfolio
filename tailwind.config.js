@@ -10,7 +10,7 @@ export default {
         primary_bg: 'rgba(var(--bg-primary) / <alpha-value>)',
         secondary_bg: 'rgba(var(--bg-secondary) / <alpha-value>)',
         text: 'rgba(var(--text) / <alpha-value>)',
-        title: 'rgba(var(--title) / <alpha-value>)',
+        // title: 'rgba(var(--title) / <alpha-value>)',
         details: 'rgba(var(--text-details) / <alpha-value>)',
         alternative_bg: 'rgba(var(--alternative-bg) / <alpha-value>)',
       },

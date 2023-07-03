@@ -14,8 +14,8 @@ export function switchTheme(theme: string): THEME {
 export function getActualTheme(): string {
   let actualTheme = localStorage.getItem('theme')
   if (actualTheme === null) {
-    localStorage.setItem('theme', THEME.LIGHT)
-    actualTheme = THEME.LIGHT
+    localStorage.setItem('theme', THEME.DARK)
+    actualTheme = THEME.DARK
   }
   return actualTheme
 }
