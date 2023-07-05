@@ -1,6 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
 import Summary from './pages/Summary'
-import NotFound from './pages/NotFound'
 import Header from './components/body/Header'
 import Technologies from './pages/Technologies'
 import AboutMe from './pages/AboutMe'
@@ -13,22 +11,14 @@ const App: React.FC = () => {
   return (
     <div>
       <Header />
-      <Routes>
-        <Route
-          path=''
-          element={
-            <main className='flex items-center flex-col xl:relative xl:w-full xl:h-screen xl:overflow-auto xl:snap-y xl:snap-mandatory max-xl:gap-28 xl:flex xl:flex-col pb-10'>
-              <Summary />
-              <Technologies />
-              <MyProjects />
-              <Studies />
-              <AboutMe />
-              <Contact />
-            </main>
-          }
-        />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <main className='flex items-center flex-col xl:relative xl:w-full xl:h-screen xl:overflow-auto xl:snap-y xl:snap-mandatory max-xl:gap-28 xl:flex xl:flex-col pb-10'>
+        <Summary />
+        <Technologies />
+        <MyProjects />
+        <Studies />
+        <AboutMe />
+        <Contact />
+      </main>
       <Footer />
     </div>
   )

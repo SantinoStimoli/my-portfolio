@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom/client'
-import { HashRouter } from 'react-router-dom'
 import './styles/general.css'
 import App from './App'
+import { StrictMode } from 'react'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <HashRouter>
+  <StrictMode>
     <App />
-  </HashRouter>
+  </StrictMode>
 )
