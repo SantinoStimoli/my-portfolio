@@ -8,20 +8,20 @@ export const NavLinks = ['Inicio', 'Tecnologías', 'Proyectos', 'Estudios', 'Sob
 export const Projects: Project[] = [
   {
     img: TATETI,
-    link: 'https://santino-stimoli.github.io/Ta-Te-Ti/',
-    repo: 'https://github.com/santino-stimoli/Ta-Te-Ti',
+    link: 'https://SantinoStimoli.github.io/Ta-Te-Ti/',
+    repo: 'https://github.com/SantinoStimoli/Ta-Te-Ti',
     title: 'Ta Te Ti',
   },
   {
     img: TECNICORT,
-    link: 'https://santino-stimoli.github.io/Tecnicort/',
-    repo: 'https://github.com/santino-stimoli/Tecnicort',
+    link: 'https://SantinoStimoli.github.io/Tecnicort/',
+    repo: 'https://github.com/SantinoStimoli/Tecnicort',
     title: 'Generador facturas',
   },
   {
     img: VALIDATION_SOFTWARE,
-    link: 'https://github.com/santino-stimoli/validation-software',
-    repo: 'https://santino-stimoli.github.io/validation-software/',
+    link: 'https://github.com/SantinoStimoli/validation-software',
+    repo: 'https://SantinoStimoli.github.io/validation-software/',
     title: 'Test + detección facial',
   },
 ]
@@ -124,8 +124,8 @@ export const socialNetworks: ISocial[] = [
   {
     name: 'Github',
     code: 'bx bxl-github',
-    link: 'https://github.com/santino-stimoli/',
-    shortedLink: '/santino-stimoli/',
+    link: 'https://github.com/SantinoStimoli/',
+    shortedLink: '/SantinoStimoli/',
     description:
       'Aquí se encuentran todos mis proyectos alojados, cada uno con su respectivo código.',
   },
@@ -140,5 +140,14 @@ export const socialNetworks: ISocial[] = [
     code: 'bx bxs-phone',
     link: 'tel:+5491134310411',
     shortedLink: '+54 9 11 3431-0411',
+  },
+]
+export const socialAndCV: ISocial[] = [
+  ...socialNetworks,
+  {
+    name: 'Curriculum',
+    code: 'bx bxs-file',
+    link: 'asheee',
+    shortedLink: 'Santino Stimoli CV 2023',
   },
 ]
