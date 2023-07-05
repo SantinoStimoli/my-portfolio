@@ -116,8 +116,8 @@ export const socialNetworks: ISocial[] = [
   {
     name: 'LinkedIn',
     code: 'bx bxl-linkedin-square',
-    link: 'https://www.linkedin.com/in/santino-stimoli/',
-    shortedLink: '/santino-stimoli/',
+    link: 'https://www.linkedin.com/in/SantinoStimoli/',
+    shortedLink: '/SantinoStimoli/',
     description:
       'Aquí subo actualizaciones regularmente sobre cómo voy desarrollando todos mis proyectos.',
   },
@@ -147,7 +147,7 @@ export const socialAndCV: ISocial[] = [
   {
     name: 'Curriculum',
     code: 'bx bxs-file',
-    link: 'asheee',
+    link: 'https://www.linkedin.com/in/santinostimoli/overlay/1635532251320/single-media-viewer/?profileId=ACoAADxipfIBogTDoyRmX8KFJCM-O5NGps2mXK8',
     shortedLink: 'Santino Stimoli CV 2023',
   },
 ]
