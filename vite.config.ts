@@ -11,5 +11,5 @@ export default defineConfig({
       },
     },
   },
-  base: 'https://santinostimoli.online',
+  base: 'https://santinostimoli.com.ar',
 })
