@@ -147,7 +147,7 @@ export const socialAndCV: ISocial[] = [
   {
     name: 'Curriculum',
     code: 'bx bxs-file',
-    link: 'https://www.linkedin.com/in/santinostimoli/overlay/1635532251320/single-media-viewer/?profileId=ACoAADxipfIBogTDoyRmX8KFJCM-O5NGps2mXK8',
+    link: 'https://www.linkedin.com/in/santinostimoli/overlay/1635532498907/single-media-viewer/?profileId=ACoAADxipfIBogTDoyRmX8KFJCM-O5NGps2mXK8',
     shortedLink: 'Santino Stimoli CV 2023',
   },
 ]
