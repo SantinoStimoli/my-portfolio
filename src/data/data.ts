@@ -1,6 +1,8 @@
 import TATETI from '../assets/Ta-Te-Ti.png'
 import VALIDATION_SOFTWARE from '../assets/Validation-Software.png'
 import TECNICORT from '../assets/Tecnicort.png'
+import CALCULATOR from '../assets/Calculator.png'
+import IPINFO from '../assets/IP-Information.png'
 import { type Study, type IStack, type Project, type ISocial } from '../interfaces/data'
 
 export const NavLinks = ['Inicio', 'Tecnologías', 'Proyectos', 'Estudios', 'Sobre mi', 'Contacto']
@@ -10,20 +12,32 @@ export const Projects: Project[] = [
     img: TATETI,
     link: 'https://SantinoStimoli.github.io/Ta-Te-Ti/',
     repo: 'https://github.com/SantinoStimoli/Ta-Te-Ti',
-    title: 'Ta Te Ti',
+    title: 'Ta Te Ti'
   },
   {
     img: TECNICORT,
     link: 'https://SantinoStimoli.github.io/Tecnicort/',
     repo: 'https://github.com/SantinoStimoli/Tecnicort',
-    title: 'Generador facturas',
+    title: 'Generador facturas'
   },
   {
     img: VALIDATION_SOFTWARE,
     link: 'https://github.com/SantinoStimoli/validation-software',
     repo: 'https://SantinoStimoli.github.io/validation-software/',
-    title: 'Test + detección facial',
+    title: 'Test + detección facial'
   },
+  {
+    img: CALCULATOR,
+    link: 'https://github.com/SantinoStimoli/calculator',
+    repo: 'https://SantinoStimoli.github.io/calculator/',
+    title: 'Calculadora'
+  },
+  {
+    img: IPINFO,
+    link: 'https://github.com/SantinoStimoli/ip-information',
+    repo: 'https://SantinoStimoli.github.io/ip-information/',
+    title: 'Geolocalización'
+  }
 ]
 
 export const DTechnologies: IStack[] = [
@@ -38,24 +52,29 @@ export const DTechnologies: IStack[] = [
       { name: 'TypeScript', code: 'bx bxl-typescript' },
       { name: 'React', code: 'bx bxl-react' },
       { name: 'Angular', code: 'bx bxl-angular' },
-      { name: 'Vue', code: 'bx bxl-vuejs' },
-    ],
+      { name: 'Vue', code: 'bx bxl-vuejs' }
+    ]
   },
   {
     title: 'BackEnd',
     technologies: [
       { name: 'JAVA', code: 'bx bxl-java' },
       { name: 'Spring', code: 'bx bxl-spring-boot' },
-    ],
+      { name: 'SQL', code: 'bx bxl-postgresql' },
+      { name: 'PostgreSQL', code: 'bx bxl-postgresql' },
+      { name: 'Node', code: 'bx bxl-nodejs' },
+      { name: 'Express.js', code: 'bx bxl-nodejs' },
+      { name: 'Php', code: 'bx bxl-php' }
+    ]
   },
   {
     title: 'Diseño',
     technologies: [
       { name: 'Illustrator', code: 'bx bxl-adobe' },
       { name: 'Photoshop', code: 'bx bxl-adobe' },
-      { name: 'Premiere', code: 'bx bxl-adobe' },
-    ],
-  },
+      { name: 'Premiere', code: 'bx bxl-adobe' }
+    ]
+  }
 ]
 
 export const studies: Study[] = [
@@ -74,9 +93,9 @@ export const studies: Study[] = [
       { name: 'JavaScript', code: 'bx bxl-javascript' },
       { name: 'Vue', code: 'bx bxl-vuejs' },
       { name: 'JAVA', code: 'bx bxl-java' },
-      { name: 'Spring', code: 'bx bxl-spring-boot' },
+      { name: 'Spring', code: 'bx bxl-spring-boot' }
     ],
-    time: 5,
+    time: 5
   },
   {
     title: 'React Developer',
@@ -90,9 +109,9 @@ export const studies: Study[] = [
       { name: 'CSS', code: 'bx bxl-css3' },
       { name: 'Tailwind', code: 'bx bxl-tailwind-css' },
       { name: 'JavaScript', code: 'bx bxl-javascript' },
-      { name: 'React', code: 'bx bxl-react' },
+      { name: 'React', code: 'bx bxl-react' }
     ],
-    time: 2,
+    time: 2
   },
   {
     title: 'TypeScript Developer',
@@ -106,10 +125,10 @@ export const studies: Study[] = [
       { name: 'CSS', code: 'bx bxl-css3' },
       { name: 'Tailwind', code: 'bx bxl-tailwind-css' },
       { name: 'TypeScript', code: 'bx bxl-typescript' },
-      { name: 'React', code: 'bx bxl-react' },
+      { name: 'React', code: 'bx bxl-react' }
     ],
-    time: 2,
-  },
+    time: 2
+  }
 ]
 
 export const socialNetworks: ISocial[] = [
@@ -119,7 +138,7 @@ export const socialNetworks: ISocial[] = [
     link: 'https://www.linkedin.com/in/SantinoStimoli/',
     shortedLink: '/SantinoStimoli/',
     description:
-      'Aquí subo actualizaciones regularmente sobre cómo voy desarrollando todos mis proyectos.',
+      'Aquí subo actualizaciones regularmente sobre cómo voy desarrollando todos mis proyectos.'
   },
   {
     name: 'Github',
@@ -127,20 +146,20 @@ export const socialNetworks: ISocial[] = [
     link: 'https://github.com/SantinoStimoli/',
     shortedLink: '/SantinoStimoli/',
     description:
-      'Aquí se encuentran todos mis proyectos alojados, cada uno con su respectivo código.',
+      'Aquí se encuentran todos mis proyectos alojados, cada uno con su respectivo código.'
   },
   {
     name: 'Gmail',
     code: 'bx bxl-gmail',
     link: 'mailto:santinostimoli@gmail.com',
-    shortedLink: 'santinostimoli@gmail.com',
+    shortedLink: 'santinostimoli@gmail.com'
   },
   {
     name: 'Phone',
     code: 'bx bxs-phone',
     link: 'tel:+5491134310411',
-    shortedLink: '+54 9 11 3431-0411',
-  },
+    shortedLink: '+54 9 11 3431-0411'
+  }
 ]
 export const socialAndCV: ISocial[] = [
   ...socialNetworks,
@@ -148,6 +167,6 @@ export const socialAndCV: ISocial[] = [
     name: 'Curriculum',
     code: 'bx bxs-file',
     link: 'https://www.linkedin.com/in/santinostimoli/overlay/1635532498907/single-media-viewer/?profileId=ACoAADxipfIBogTDoyRmX8KFJCM-O5NGps2mXK8',
-    shortedLink: 'Santino Stimoli CV 2023',
-  },
+    shortedLink: 'Santino Stimoli CV 2023'
+  }
 ]
