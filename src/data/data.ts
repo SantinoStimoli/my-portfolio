@@ -22,20 +22,20 @@ export const Projects: Project[] = [
   },
   {
     img: VALIDATION_SOFTWARE,
-    link: 'https://github.com/SantinoStimoli/validation-software',
-    repo: 'https://SantinoStimoli.github.io/validation-software/',
+    repo: 'https://github.com/SantinoStimoli/validation-software',
+    link: 'https://SantinoStimoli.github.io/validation-software/',
     title: 'Test + detección facial'
   },
   {
     img: CALCULATOR,
-    link: 'https://github.com/SantinoStimoli/calculator',
-    repo: 'https://SantinoStimoli.github.io/calculator/',
+    repo: 'https://github.com/SantinoStimoli/calculator',
+    link: 'https://SantinoStimoli.github.io/calculator/',
     title: 'Calculadora'
   },
   {
     img: IPINFO,
-    link: 'https://github.com/SantinoStimoli/ip-information',
-    repo: 'https://SantinoStimoli.github.io/ip-information/',
+    repo: 'https://github.com/SantinoStimoli/ip-information',
+    link: 'https://SantinoStimoli.github.io/ip-information/',
     title: 'Geolocalización'
   }
 ]
