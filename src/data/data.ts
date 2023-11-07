@@ -3,6 +3,7 @@ import VALIDATION_SOFTWARE from '../assets/Validation-Software.png'
 import TECNICORT from '../assets/Tecnicort.png'
 import CALCULATOR from '../assets/Calculator.png'
 import IPINFO from '../assets/IP-Information.png'
+import PLATA_GRUPAL from '../assets/Plata-Grupal.png'
 import { type Study, type IStack, type Project, type ISocial } from '../interfaces/data'
 
 export const NavLinks = ['Inicio', 'Tecnologías', 'Proyectos', 'Estudios', 'Sobre mi', 'Contacto']
@@ -10,32 +11,38 @@ export const NavLinks = ['Inicio', 'Tecnologías', 'Proyectos', 'Estudios', 'Sob
 export const Projects: Project[] = [
   {
     img: TATETI,
-    link: 'https://SantinoStimoli.github.io/Ta-Te-Ti/',
+    link: 'https://SantinoStimoli.github.io/Ta-Te-Ti',
     repo: 'https://github.com/SantinoStimoli/Ta-Te-Ti',
     title: 'Ta Te Ti'
   },
   {
     img: TECNICORT,
-    link: 'https://SantinoStimoli.github.io/Tecnicort/',
+    link: 'https://SantinoStimoli.github.io/Tecnicort',
     repo: 'https://github.com/SantinoStimoli/Tecnicort',
     title: 'Generador facturas'
   },
   {
     img: VALIDATION_SOFTWARE,
+    link: 'https://SantinoStimoli.github.io/validation-software',
     repo: 'https://github.com/SantinoStimoli/validation-software',
-    link: 'https://SantinoStimoli.github.io/validation-software/',
     title: 'Test + detección facial'
   },
   {
     img: CALCULATOR,
+    link: 'https://SantinoStimoli.github.io/calculator',
     repo: 'https://github.com/SantinoStimoli/calculator',
-    link: 'https://SantinoStimoli.github.io/calculator/',
     title: 'Calculadora'
   },
   {
     img: IPINFO,
+    link: 'https://SantinoStimoli.github.io/ip-information',
     repo: 'https://github.com/SantinoStimoli/ip-information',
-    link: 'https://SantinoStimoli.github.io/ip-information/',
+    title: 'Geolocalización'
+  },
+  {
+    img: PLATA_GRUPAL,
+    link: 'https://SantinoStimoli.github.io/plata-grupal',
+    repo: 'https://github.com/SantinoStimoli/plata-grupal',
     title: 'Geolocalización'
   }
 ]

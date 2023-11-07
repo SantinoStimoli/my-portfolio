@@ -7,9 +7,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        assetFileNames: '[name][extname]',
-      },
-    },
+        assetFileNames: '[name][extname]'
+      }
+    }
   },
-  base: 'https://santinostimoli.com.ar',
+  base: '/my-portfolio/'
 })
