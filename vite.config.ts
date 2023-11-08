@@ -10,6 +10,6 @@ export default defineConfig({
         assetFileNames: '[name][extname]'
       }
     }
-  },
-  base: '/my-portfolio/'
+  }
+  // base: '/my-portfolio/'
 })
