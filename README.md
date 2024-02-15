@@ -1,17 +1,54 @@
-# Portfolio Personal
+# Astro Starter Kit: Basics
 
-Este repositorio contiene mi portfolio personal, una página web donde presento mi experiencia, habilidades y proyectos destacados. Aquí podrás encontrar información sobre mi formación académica, experiencia laboral y proyectos previos, así como una muestra de mis habilidades técnicas y logros profesionales.
+```sh
+npm create astro@latest -- --template basics
+```
 
-## Características principales
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-- **Diseño elegante y profesional**: El portfolio ha sido diseñado con una apariencia moderna y atractiva, brindando una experiencia visualmente agradable para los visitantes.
-- **Secciones informativas**: Encontrarás secciones dedicadas a mi perfil, habilidades, experiencia laboral, proyectos y formas de contacto. Cada sección ha sido cuidadosamente diseñada para proporcionar la información relevante de manera clara y concisa.
-- **Galería de proyectos**: Destaco algunos de mis proyectos más significativos, incluyendo descripciones, capturas de pantalla y enlaces a los repositorios o sitios web correspondientes. Esto permite a los visitantes explorar y evaluar mi trabajo previo.
-- **Sección de habilidades técnicas**: Enumero y describo las habilidades técnicas que he desarrollado a lo largo de mi carrera profesional, para que los visitantes puedan tener una idea clara de mis competencias.
-- **Sección de contacto**: Proporciono diversas formas de contacto para facilitar la comunicación con los interesados, ya sea para colaboraciones, oportunidades laborales o cualquier otra consulta.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Tecnologías utilizadas
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-- React + TypeScript + CSS para el desarrollo del front-end.
-- Tailwind para una maquetación responsiva y estilos predefinidos.
-- Git y GitHub para el control de versiones y colaboración.
+## 🚀 Project Structure
+
+Inside of your Astro project, you'll see the following folders and files:
+
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
