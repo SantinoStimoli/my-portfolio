@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <div>
       <Header />
-      <main className='flex items-center flex-col xl:relative xl:w-full xl:h-screen xl:overflow-auto xl:snap-y xl:snap-mandatory max-xl:gap-28 xl:flex xl:flex-col pb-10'>
+      <main className='content-main flex items-center flex-col xl:relative xl:w-full xl:h-screen xl:overflow-auto xl:snap-y xl:snap-mandatory max-xl:gap-28 xl:flex xl:flex-col pb-10'>
         <Summary />
         <Technologies />
         <MyProjects />
