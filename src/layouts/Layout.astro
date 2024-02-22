@@ -18,6 +18,10 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
 
+    <!-- ICONS -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <SEO
       title='Santino Stimoli - Software Developer'
       description='¡Hola! Soy Santino, un apasionado desarrollador de software, aquí podrás ver todos mis trabajos y proyectos para que puedas conocerme. ¡Bienvenido a mi portafolio!'
@@ -37,7 +41,7 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
   </head>
   <body>
     <Navbar />
-    <main class="max-w-screen-xl mx-auto px-5">
+    <main class="container mx-auto px-5">
       <slot />
     </main>
     <Footer />
@@ -48,10 +52,6 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
       body {
         @apply bg-custom-bg text-custom-text;
       }
-
-      /* #start {
-        height: calc(100vh - 100px);
-      } */
     </style>
   </body>
 </html>
