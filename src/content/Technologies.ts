@@ -1,4 +1,4 @@
-export const Technologies: Technology[] = [
+export const PopularTechnologies: Technology[] = [
   {
     name: 'JavaScript',
     icon: 'bxl-javascript',
@@ -28,3 +28,7 @@ export const Technologies: Technology[] = [
     icon: 'bx-data',
   },
 ]
+
+export const FrontEndTechnologies: Technology[] = []
+export const BackEndTechnologies: Technology[] = []
+export const AppTechnologies: Technology[] = []
