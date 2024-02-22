@@ -1,7 +1,7 @@
 ---
 import { SEO } from 'astro-seo'
 import Footer from '@components/sections/footer.astro'
-import Navbar from '@components/sections/navbar/navbar.astro'
+import Navbar from '@components/sections/navbar.astro'
 import '@fontsource-variable/inter/index.css'
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString()
@@ -19,8 +19,8 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
     <meta name='generator' content={Astro.generator} />
 
     <!-- ICONS -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js'></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
 
     <SEO
       title='Santino Stimoli - Software Developer'
@@ -40,17 +40,29 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
     />
   </head>
   <body>
-    <Navbar />
-    <main class="container mx-auto px-5">
-      <slot />
+    <main>
+      <Navbar />
+      <main class='container mx-auto px-5'>
+        <slot />
+      </main>
+      <Footer />
     </main>
-    <Footer />
     <style is:global>
       img {
         content-visibility: auto;
       }
-      body {
+      html {
         @apply bg-custom-bg text-custom-text;
+      }
+
+      body > main > main {
+        @apply bg-custom-bg text-custom-text bg-no-repeat bg-cover;
+        background-image: url('../assets/fondo.png');
+      }
+
+      #bg-pic {
+        @apply bg-cover bg-center;
+        background-image: url('../assets/fondo-foto.png');
       }
     </style>
   </body>

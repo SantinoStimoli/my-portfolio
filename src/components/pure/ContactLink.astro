@@ -1,0 +1,10 @@
+---
+export interface Props {
+  link: string
+  icon: string
+}
+---
+
+<a href={Astro.props.link} target='_blank'>
+  <i class={`bx ${Astro.props.icon} bx-md`}></i>
+</a>
