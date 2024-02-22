@@ -1,15 +1,16 @@
 ---
-import Container from '@components/container.astro'
 import { Astronav, MenuItems, MenuIcon } from 'astro-navbar'
+import LOGO from '@assets/LOGO.png'
+import { Picture } from 'astro:assets'
 
 const menuitems = [
   {
-    title: 'Stack',
-    path: '#stack',
-  },
-  {
     title: 'Trabajo',
     path: '#work',
+  },
+  {
+    title: 'Stack',
+    path: '#stack',
   },
   {
     title: 'Proyectos',
@@ -31,13 +32,22 @@ const menuitems = [
 ---
 
 <!-- TODO AL HACER CLICK DEBE CERRAR EL MENU EN MOBILE -->
-<Container>
   <header
-    class='flex flex-col lg:flex-row justify-between items-center py-5 w-full fixed left-0 top-0 px-3 bg-custom-bg z-50 border-b'
+    class='max-w-screen-xl mx-auto px-5 flex flex-col lg:flex-row justify-between items-center p-5 w-full fixed left-0 top-0 bg-custom-bg z-50 border-b'
   >
     <Astronav>
       <div class='flex w-full lg:w-auto items-center justify-between'>
-        <a href='#start' class='text-lg'>IMAGEN</a>
+        <a href='#start' class='text-lg'>
+          <Picture
+            src={LOGO}
+            alt='Santino Stimoli retrato'
+            widths={[200, 400, 600]}
+            sizes='(max-width: 800px) 100vw, 620px'
+            loading='eager'
+            format='avif'
+            class='m-3 w-40'
+          />
+        </a>
         <div class='block lg:hidden'>
           <MenuIcon class='w-4 h-4' />
         </div>
@@ -63,4 +73,3 @@ const menuitems = [
       </MenuItems>
     </Astronav>
   </header>
-</Container>

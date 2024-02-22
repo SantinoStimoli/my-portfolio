@@ -41,7 +41,9 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
   </head>
   <body>
     <Navbar />
-    <slot />
+    <main class="max-w-screen-xl mx-auto px-5">
+      <slot />
+    </main>
     <Footer />
     <style is:global>
       img {
@@ -50,6 +52,10 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
       body {
         @apply bg-custom-bg text-custom-text;
       }
+
+      /* #start {
+        height: calc(100vh - 100px);
+      } */
     </style>
   </body>
 </html>
