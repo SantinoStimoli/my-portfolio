@@ -1,6 +1,6 @@
 ---
 import { Picture } from 'astro:assets'
-import IMG from 'assets/Foto.png'
+import MY_IMG from 'assets/Foto.png'
 import { PopularTechnologies } from 'content/technologies'
 import { contactWays } from 'content/profile'
 import { jobTitle } from 'content/profile'
@@ -8,10 +8,10 @@ import TechClip from '@components/pure/TechClip.astro'
 import ContactLink from '@components/pure/ContactLink.astro'
 ---
 
-<section id='start' class='grid lg:grid-cols-2 place-items-center pb-8 md:pt-12 md:pb-24 py-20'>
-  <div id='bg-pic' class='bg-custom-bg-2/70 shadow-xl shadow-black rounded-full lg:order-2 lg:ml-auto lg:mr-5'>
+<section id='start' class='grid lg:grid-cols-2 place-items-center py-40'>
+  <div id='bg-pic' class='scale-110 bg-custom-bg-2 shadow-xl shadow-black rounded-full lg:order-2 lg:ml-auto lg:mr-5'>
     <Picture
-      src={IMG}
+      src={MY_IMG}
       alt='Santino Stimoli retrato'
       widths={[200, 400, 600]}
       sizes='(max-width: 800px) 100vw, 620px'

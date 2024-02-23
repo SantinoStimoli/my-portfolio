@@ -18,7 +18,7 @@ export const contactWays: ContactWay[] = [
     icon: 'bxs-phone',
   },
   {
-    link: '#',
+    link: 'https://www.linkedin.com/in/santinostimoli/overlay/1708533346439/single-media-viewer/?profileId=ACoAADxipfIBogTDoyRmX8KFJCM-O5NGps2mXK8',
     icon: 'bxs-file-blank',
   },
 ]
