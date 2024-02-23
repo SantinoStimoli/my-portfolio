@@ -35,7 +35,7 @@ export const studyExperience: Experience[] = [
       },
       {
         name: 'SQL',
-        icon: 'bxl-data',
+        icon: 'bx-data',
       },
       {
         name: 'PostgreSQL',

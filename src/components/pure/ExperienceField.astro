@@ -6,8 +6,8 @@ interface Props {
 }
 ---
 
-<div class='px-5 mx-auto flex flex-wrap'>
-  <div class='flex relative py-10 sm:items-center md:w-2/3 mx-auto'>
+<div class='lg:px-5 mx-auto flex flex-wrap'>
+  <div class='flex relative py-10 sm:items-center lg:w-2/3 mx-auto'>
     <div class='h-full w-6 absolute inset-0 flex items-center justify-center'>
       <div class='h-full w-1 bg-gray-200 pointer-events-none'></div>
     </div>
@@ -22,7 +22,7 @@ interface Props {
           <h3 class=''>{Astro.props.experience.company}</h3>
           <span>{Astro.props.experience.range}</span>
         </div>
-        <p class='leading-relaxed'>
+        <p class='text-custom-text-2'>
           {Astro.props.experience.description}
         </p>
         <TechClipSection style='mt-3' technologies={Astro.props.experience.technologies} />

@@ -3,9 +3,11 @@ import StackField from '@components/pure/StackField.astro'
 import { fields } from 'content/technologies'
 ---
 
-<section id='stack' class='pb-40'>
-  <h2 class='text-6xl font-black uppercase text-center mb-20'>Stack</h2>
-  <div class='[&>*]:w-1/3 flex gap-5 items-start'>
+<section id='stack'>
+  <!-- <h2>Stack</h2> -->
+  <div
+    class='lg:[&>*]:w-1/3 max-lg:flex-col max-lg:mx-20 flex gap-20 lg:gap-10 max-xl:flex-wrap justify-center items-start max-xl:[&>div:last-child]:!order-2 max-xl:[&>div:first-child]:!order-1 max-xl:[&>div:nth-child(2)]:!order-3'
+  >
     {fields.map((field) => <StackField field={field} />)}
   </div>
 </section>

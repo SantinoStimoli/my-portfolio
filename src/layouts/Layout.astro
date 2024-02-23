@@ -58,13 +58,27 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
         @apply container mx-auto shadow-md rounded my-10 shadow-white;
       }
       body > main > main {
-        @apply bg-custom-bg text-custom-text bg-no-repeat bg-cover px-10;
+        @apply bg-custom-bg text-custom-text bg-no-repeat bg-cover px-3 md:px-10;
         background-image: url('../assets/fondo.png');
+      }
+
+      body > main > main > section {
+        @apply py-40;
+      }
+
+      body > main > main > section > h2 {
+        @apply text-4xl md:text-6xl font-black uppercase text-center mb-20;
       }
 
       #bg-pic {
         @apply bg-cover bg-center;
         background-image: url('../assets/fondo-foto.png');
+      }
+
+      @media (min-width: 1024px) {
+        #start {
+          height: calc(100vh - 2.5rem - 70px);
+        }
       }
     </style>
   </body>

@@ -8,57 +8,93 @@ import ContactLink from '@components/pure/ContactLink.astro'
 import TechClipSection from '@components/pure/TechClipSection.astro'
 ---
 
-<section id='start' class='grid lg:grid-cols-2 place-items-center py-40'>
-  <div id='bg-pic' class='scale-110 bg-custom-bg-2 shadow-xl shadow-black rounded-full lg:order-2 lg:ml-auto lg:mr-5'>
-    <Picture
-      src={MY_IMG}
-      alt='Santino Stimoli retrato'
-      widths={[200, 400, 600]}
-      sizes='(max-width: 800px) 100vw, 620px'
-      loading='eager'
-      format='avif'
-      class='rounded-full m-3 max-w-[550px] w-auto'
-    />
-  </div>
-  <div class='max-lg:mt-10 max-lg:text-center max-lg:w-[360px]'>
-    <h1 class='text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter'>Santino Stimoli</h1>
-    <h2 class='text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter text-custom-decoration'>
-      {jobTitle}
-    </h2>
-    <p class='text-lg mt-4 text-custom-text/80 max-w-xl [&_b]:underline [&_b]:text-custom-text'>
-      <b>Profesional</b>
-      <b>proactivo</b> con sólidas habilidades interpersonales y <b>eficiencia</b> en entornos laborales. Destaco por mi
-      capacidad para establecer <b>conexiones</b>
-      <b>significativas</b> con compañeros, lo que me ha permitido resaltar en varios proyectos.
-    </p>
-
-    <TechClipSection style='mt-3' technologies={starredTechnologies} />
-
+<section id='start' class='pt-40 flex flex-col justify-between'>
+  <section class='grid lg:grid-cols-2 place-items-center'>
     <div
-      class='[&_a]:h-9 [&_a]:w-9 [&_a:hover]:text-custom-decoration [&_a]:transition-all flex gap-5 mt-5 max-lg:justify-center'
+      id='bg-pic'
+      class='scale-110 bg-custom-bg-2 shadow-xl shadow-black rounded-full lg:order-2 lg:ml-auto lg:mr-10'
     >
-      {contactWays.map((contactWay) => <ContactLink link={contactWay.link} icon={contactWay.icon} />)}
+      <Picture
+        src={MY_IMG}
+        alt='Santino Stimoli retrato'
+        widths={[200, 400, 600]}
+        sizes='(max-width: 800px) 100vw, 620px'
+        loading='eager'
+        format='avif'
+        class='rounded-full m-3 max-w-[550px] w-auto'
+      />
     </div>
+    <div class='max-lg:mt-20 max-lg:text-center max-lg:max-w-[400px]'>
+      <h1 class='text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter'>Santino Stimoli</h1>
+      <h2
+        class='text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter text-custom-decoration'
+      >
+        {jobTitle}
+      </h2>
+      <p class='text-lg mt-4 text-custom-text-2 [&_b]:underline [&_b]:text-custom-text'>
+        <b>Profesional</b>
+        <b>proactivo</b> con sólidas habilidades interpersonales y <b>eficiencia</b> en entornos laborales. Destaco por mi
+        capacidad para establecer <b>conexiones</b>
+        <b>significativas</b> con compañeros, lo que me ha permitido resaltar en varios proyectos.
+      </p>
+
+      <TechClipSection style='mt-3 justify-center' technologies={starredTechnologies} />
+
+      <div
+        class='[&_a]:h-9 [&_a]:w-9 [&_a:hover]:text-custom-decoration [&_a]:transition-all flex gap-5 mt-5 max-lg:justify-center'
+      >
+        <div class='flex items-center gap-3'>
+          <h3 class='text-2xl font-black uppercase'>Contacto:</h3>
+          <div>
+            {contactWays.map((contactWay) => <ContactLink link={contactWay.link} icon={contactWay.icon} />)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class='lg:absolute max-lg:mt-20 inset-0 flex justify-center items-end view-more'>
+    <a href='#about' class='flex flex-col items-center uppercase hover:text-custom-decoration'>
+      <span>Ver mas</span>
+      <i class='bx bx-chevron-down bx-md'></i>
+    </a>
   </div>
-
-  <script>
-    const start = document.querySelector('body')
-    const el = document.getElementById('bg-pic')
-    const height = el?.clientHeight ?? 0
-    const width = el?.clientWidth ?? 0
-
-    start?.addEventListener('mousemove', (evt) => {
-      const { x, y } = evt
-      const yRotation = ((x - width / 2) / width) * -3
-      const xRotation = ((y - height / 2) / height) * -3
-
-      const style = `
-      perspective(500px)
-      scale(1.1)
-      rotateX(${xRotation}deg)
-      rotateY(${yRotation}deg)
-      `
-      el !== null ? (el.style.transform = style) : ''
-    })
-  </script>
 </section>
+
+<style>
+  @keyframes moveUpDown {
+    0%,
+    100% {
+      margin-bottom: 60px;
+    }
+    50% {
+      margin-bottom: 80px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .view-more {
+      animation: moveUpDown 1s linear infinite;
+    }
+  }
+</style>
+
+<script>
+  const start = document.getElementById('start')
+  const el = document.getElementById('bg-pic')
+  const height = el?.clientHeight ?? 0
+  const width = el?.clientWidth ?? 0
+
+  start?.addEventListener('mousemove', (evt) => {
+    const { x, y } = evt
+    const yRotation = ((x - width / 2) / width) * -3
+    const xRotation = ((y - height / 2) / height) * -3
+
+    const style = `
+    perspective(500px)
+    scale(1.1)
+    rotateX(${xRotation}deg)
+    rotateY(${yRotation}deg)
+    `
+    el !== null ? (el.style.transform = style) : ''
+  })
+</script>
