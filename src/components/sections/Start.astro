@@ -4,7 +4,6 @@ import MY_IMG from 'assets/Foto.png'
 import { starredTechnologies } from 'content/technologies'
 import { contactWays } from 'content/profile'
 import { jobTitle } from 'content/profile'
-import TechClip from '@components/pure/TechClip.astro'
 import ContactLink from '@components/pure/ContactLink.astro'
 import TechClipSection from '@components/pure/TechClipSection.astro'
 ---
@@ -27,13 +26,10 @@ import TechClipSection from '@components/pure/TechClipSection.astro'
       {jobTitle}
     </h2>
     <p class='text-lg mt-4 text-custom-text/80 max-w-xl [&_b]:underline [&_b]:text-custom-text'>
-      Soy un <b>profesional</b>
+      <b>Profesional</b>
       <b>proactivo</b> con sólidas habilidades interpersonales y <b>eficiencia</b> en entornos laborales. Destaco por mi
       capacidad para establecer <b>conexiones</b>
       <b>significativas</b> con compañeros, lo que me ha permitido resaltar en varios proyectos.
-      <br />
-      Mis habilidades técnicas incluyen entre muchas otras <b>JavaScript</b>, <b>TypeScript</b>, <b>React</b>, <b>Vue</b
-      >, <b>Java</b>, <b>Node</b> y <b>SQL</b>.
     </p>
 
     <TechClipSection style='mt-3' technologies={starredTechnologies} />

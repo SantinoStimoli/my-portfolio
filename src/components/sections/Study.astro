@@ -1,0 +1,10 @@
+---
+import WorkField from '@components/pure/ExperienceField.astro'
+import { studyExperience } from '../../content/study'
+---
+
+<section id='study' class='pb-40'>
+  <h2 class='text-6xl font-black uppercase text-center mb-20'>Formación</h2>
+  {studyExperience.map((experience) => <WorkField experience={experience} />)}
+  <section></section>
+</section>
