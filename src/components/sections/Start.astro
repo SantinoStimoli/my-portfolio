@@ -8,12 +8,9 @@ import ContactLink from '@components/pure/ContactLink.astro'
 import TechClipSection from '@components/pure/TechClipSection.astro'
 ---
 
-<section id='start' class='pt-40 flex flex-col justify-between'>
+<section id='start' class='flex flex-col justify-between'>
   <section class='grid lg:grid-cols-2 place-items-center'>
-    <div
-      id='bg-pic'
-      class='scale-110 bg-custom-bg-2 shadow-xl shadow-black rounded-full lg:order-2 lg:ml-auto lg:mr-10'
-    >
+    <div id='bg-pic' class='bg-custom-bg-2 shadow-xl shadow-black rounded-full lg:order-2 lg:ml-auto lg:mr-5'>
       <Picture
         src={MY_IMG}
         alt='Santino Stimoli retrato'
@@ -31,7 +28,7 @@ import TechClipSection from '@components/pure/TechClipSection.astro'
       >
         {jobTitle}
       </h2>
-      <p class='text-lg mt-4 text-custom-text-2 [&_b]:underline [&_b]:text-custom-text'>
+      <p class='text-lg my-10 md:mt-4 text-custom-text-2 [&_b]:underline [&_b]:text-custom-text'>
         <b>Profesional</b>
         <b>proactivo</b> con sólidas habilidades interpersonales y <b>eficiencia</b> en entornos laborales. Destaco por mi
         capacidad para establecer <b>conexiones</b>
@@ -41,9 +38,9 @@ import TechClipSection from '@components/pure/TechClipSection.astro'
       <TechClipSection style='mt-3 justify-center' technologies={starredTechnologies} />
 
       <div
-        class='[&_a]:h-9 [&_a]:w-9 [&_a:hover]:text-custom-decoration [&_a]:transition-all flex gap-5 mt-5 max-lg:justify-center'
+        class='[&_a]:h-9 [&_a]:w-9 [&_a:hover]:text-custom-decoration [&_a]:transition-all flex gap-5 max-lg:justify-center mt-10'
       >
-        <div class='flex items-center gap-3'>
+        <div class='flex items-center gap-3 max-md:flex-col'>
           <h3 class='text-2xl font-black uppercase'>Contacto:</h3>
           <div>
             {contactWays.map((contactWay) => <ContactLink link={contactWay.link} icon={contactWay.icon} />)}
@@ -91,7 +88,7 @@ import TechClipSection from '@components/pure/TechClipSection.astro'
 
     const style = `
     perspective(500px)
-    scale(1.1)
+    scale(1)
     rotateX(${xRotation}deg)
     rotateY(${yRotation}deg)
     `
