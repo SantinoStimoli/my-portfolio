@@ -9,6 +9,7 @@ module.exports = {
         'custom-bg-2': '#b6002d',
         'custom-decoration': '#f9003d',
         'custom-text': '#fff',
+        'custom-text-2': '#ADAEB3',
       },
       fontFamily: {
         sans: ['Inter Variable', 'Inter', ...defaultTheme.fontFamily.sans],

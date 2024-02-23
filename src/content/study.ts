@@ -1,1 +1,1 @@
-export const StudyExperience: Experience[] = []
+export const studyExperience: Experience[] = []

@@ -1,4 +1,4 @@
-export const StarredTechnologies: Technology[] = [
+export const starredTechnologies: Technology[] = [
   {
     name: 'JavaScript',
     icon: 'bxl-javascript',
@@ -29,7 +29,7 @@ export const StarredTechnologies: Technology[] = [
   },
 ]
 
-const FrontEndTechnologies: Technology[] = [
+const frontEndTechnologies: Technology[] = [
   {
     name: 'HTML',
     icon: 'bxl-html5',
@@ -76,7 +76,7 @@ const FrontEndTechnologies: Technology[] = [
   },
 ]
 
-const BackEndTechnologies: Technology[] = [
+const backEndTechnologies: Technology[] = [
   {
     name: 'JAVA',
     icon: 'bxl-java',
@@ -111,7 +111,7 @@ const BackEndTechnologies: Technology[] = [
   },
 ]
 
-const AppTechnologies: Technology[] = [
+const appTechnologies: Technology[] = [
   {
     name: 'VSC',
     icon: 'bxl-visual-studio',
@@ -169,14 +169,14 @@ const AppTechnologies: Technology[] = [
 export const fields: Field[] = [
   {
     name: 'FrontEnd',
-    technologies: FrontEndTechnologies,
+    technologies: frontEndTechnologies,
   },
   {
     name: 'Apps',
-    technologies: AppTechnologies,
+    technologies: appTechnologies,
   },
   {
     name: 'BackEnd',
-    technologies: BackEndTechnologies,
+    technologies: backEndTechnologies,
   },
 ]

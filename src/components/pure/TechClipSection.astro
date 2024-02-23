@@ -1,0 +1,12 @@
+---
+import TechClip from './TechClip.astro'
+
+interface Props {
+  technologies: Technology[]
+  style?: string
+}
+---
+
+<div class=`flex flex-wrap gap-1.5 ${Astro.props.style}`>
+  {Astro.props.technologies.map((technology) => <TechClip technology={technology} />)}
+</div>

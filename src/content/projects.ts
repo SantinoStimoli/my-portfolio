@@ -1,1 +1,1 @@
-export const Projects: Projects[] = []
+export const projects: Projects[] = []
