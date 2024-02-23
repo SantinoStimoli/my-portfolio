@@ -1,7 +1,7 @@
 ---
 import { Picture } from 'astro:assets'
 import MY_IMG from 'assets/Foto.png'
-import { PopularTechnologies } from 'content/technologies'
+import { StarredTechnologies } from 'content/technologies'
 import { contactWays } from 'content/profile'
 import { jobTitle } from 'content/profile'
 import TechClip from '@components/pure/TechClip.astro'
@@ -36,7 +36,7 @@ import ContactLink from '@components/pure/ContactLink.astro'
     </p>
 
     <section class='flex flex-wrap gap-1.5 mt-3'>
-      {PopularTechnologies.map((technology) => <TechClip title={technology.name} icon={technology.icon} />)}
+      {StarredTechnologies.map((technology) => <TechClip title={technology.name} icon={technology.icon} />)}
     </section>
 
     <div
