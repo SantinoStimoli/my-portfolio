@@ -26,7 +26,7 @@ interface Project {
   company: string
   img: any
   description: string
-  codeLink: string
+  codeLink?: string
   pageLink: string
-  technologies: Technology[]
+  technologies: string[]
 }

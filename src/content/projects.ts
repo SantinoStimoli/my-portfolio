@@ -1,71 +1,26 @@
 export const projects: Project[] = [
   {
-    title: 'Proyecto 1',
-    company: 'Destinatario',
-    img: 'https://unsplash.it/300/300',
-    description:
-      'Esta ya es una descripcion un poco mas larga para el que este interesado en leer mucho mas del proyecto al que han clickeado. Se ve que te gusto mucho no?',
-    codeLink: 'https://www.instagram.com/?hl=es-la',
-    pageLink: 'https://twitter.com/home',
-    technologies: [
-      {
-        name: 'JavaScript',
-        icon: 'bxl-javascript',
-      },
-      {
-        name: 'TypeScript',
-        icon: 'bxl-typescript',
-      },
-      {
-        name: 'React',
-        icon: 'bxl-react',
-      },
-    ],
+    title: 'Selatio LTD (LP)',
+    company: 'Net Duo SA',
+    img: '',
+    description: 'DESCRIPCION',
+    pageLink: 'https://www.selatioltd.com/',
+    technologies: ['bxl-react', 'bxl-javascript', 'bxl-tailwind-css'],
   },
   {
-    title: 'Proyecto 1',
-    company: 'Destinatario',
-    img: 'https://unsplash.it/300/300',
-    description:
-      'Esta ya es una descripcion un poco mas larga para el que este interesado en leer mucho mas del proyecto al que han clickeado. Se ve que te gusto mucho no?',
-    codeLink: 'https://www.instagram.com/?hl=es-la',
-    pageLink: 'https://twitter.com/home',
-    technologies: [
-      {
-        name: 'JavaScript',
-        icon: 'bxl-javascript',
-      },
-      {
-        name: 'TypeScript',
-        icon: 'bxl-typescript',
-      },
-      {
-        name: 'React',
-        icon: 'bxl-react',
-      },
-    ],
+    title: 'TUT88 (LP)',
+    company: 'Net Duo SA',
+    img: '',
+    description: 'DESCRIPCION',
+    pageLink: 'https://tut88mkt.com/',
+    technologies: ['bxl-wordpress'],
   },
   {
-    title: 'Proyecto 1',
-    company: 'Destinatario',
-    img: 'https://unsplash.it/300/300',
-    description:
-      'Esta ya es una descripcion un poco mas larga para el que este interesado en leer mucho mas del proyecto al que han clickeado. Se ve que te gusto mucho no?',
-    codeLink: 'https://www.instagram.com/?hl=es-la',
-    pageLink: 'https://twitter.com/home',
-    technologies: [
-      {
-        name: 'JavaScript',
-        icon: 'bxl-javascript',
-      },
-      {
-        name: 'TypeScript',
-        icon: 'bxl-typescript',
-      },
-      {
-        name: 'React',
-        icon: 'bxl-react',
-      },
-    ],
+    title: 'RNM (LP)',
+    company: 'Net Duo SA',
+    img: '',
+    description: 'DESCRIPCION',
+    pageLink: 'https://www.rnmglobalmkt.com/',
+    technologies: ['bxl-html5', 'bxl-css3', 'bxl-javascript'],
   },
 ]

@@ -4,7 +4,7 @@ interface Props {
 }
 ---
 
-<div class='project-card max-w-[350px] shadow-p rounded-t'>
+<div class='project-card w-[300px] md:w-[350px] shadow-p rounded-t'>
   <div
     class='h-[74px] relative float-right shadow-p w-full px-5 py-2.5 z-30 bg-gradient-to-r from-secondary to-primary border border-b-0 text-xl font-bold'
   >
@@ -15,19 +15,23 @@ interface Props {
     <div>
       <img class='h-[250px] w-full float-right border-x -z-10' src={Astro.props.project?.img} />
       <div class='absolute top-[74px] right-0.5 px-2.5 py-1.5 bg-black/50 rounded-bl-md flex items-center gap-0.5 z-40'>
-        {Astro.props.project?.technologies.map((technology) => <i class={`bx ${technology.icon} text-3xl`} />)}
+        {Astro.props.project?.technologies.map((technology) => <i class={`bx ${technology} text-3xl`} />)}
       </div>
       <div class='links absolute left-3 flex gap-5 z-10 transition-all'>
-        <div>
-          <i class='bx bxl-github bx-md'></i>
-        </div>
-        <div>
+        <a href={Astro.props.project?.pageLink} target='_blank'>
           <i class='bx bx-link-external bx-md'></i>
-        </div>
+        </a>
+        {
+          Astro.props.project?.codeLink && (
+            <a href={Astro.props.project?.codeLink} target='_blank'>
+              <i class='bx bxl-github bx-md' />
+            </a>
+          )
+        }
       </div>
     </div>
     <div
-      class='relative float-right px-5 py-2.5 bg-gradient-to-r from-secondary to-primary rounded-b border border-t-0 !z-50 shadow-p-2'
+      class='relative w-full h-[150px] float-right px-5 py-2.5 bg-gradient-to-r from-secondary to-primary rounded-b border border-t-0 !z-50 shadow-p-2'
     >
       <p>
         {Astro.props.project?.description}
@@ -44,7 +48,7 @@ interface Props {
     top: 330px;
   }
 
-  .links > div {
+  .links > a {
     @apply p-3 pt-3.5 bg-black/50 rounded-t-md flex items-center gap-0.5 z-20 hover:text-secondary hover:bg-black/30 cursor-pointer transition-all;
   }
 
