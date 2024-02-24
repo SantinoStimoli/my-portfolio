@@ -2,3 +2,5 @@ Cabiar foto mia
 Cambiar bg de mi foto
 Ver mas y altura del hero esta mal para notebook
 Descripciones de proyectos
+Bug Foto
+Ver de poner en el footer los contactos y/o el codigo fuente
