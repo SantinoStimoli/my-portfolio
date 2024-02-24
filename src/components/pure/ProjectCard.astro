@@ -1,0 +1,27 @@
+---
+interface Props {
+  project?: Project
+}
+---
+
+<div class='max-w-[350px] shadow-p rounded-t'>
+  <div
+    class='h-[74px] relative float-right shadow-p w-full px-5 py-2.5 z-30 bg-gradient-to-r from-custom-bg-2 to-custom-bg border border-b-0 text-xl font-bold'
+  >
+    <h1>{Astro.props.project?.title}</h1>
+    <h2 class='text-md font-light -mt-1'>{Astro.props.project?.company}</h2>
+  </div>
+  <div class='relative'>
+    <img class='h-[250px] w-full float-right border-x -z-10' src={Astro.props.project?.img} />
+    <div class='absolute !top-[74px] right-0.5 p-3 pt-3.5 bg-black/50 rounded-bl-md flex items-center gap-0.5 z-20'>
+      {Astro.props.project?.technologies.map((technology) => <i class={`bx ${technology.icon} bx-sm`} />)}
+    </div>
+    <div
+      class='float-right px-5 py-2.5 bg-gradient-to-r from-custom-bg-2 to-custom-bg rounded-b border border-t-0 z-50 shadow-custom-decoration'
+    >
+      <p>
+        {Astro.props.project?.description}
+      </p>
+    </div>
+  </div>
+</div>

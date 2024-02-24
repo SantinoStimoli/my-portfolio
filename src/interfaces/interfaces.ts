@@ -21,9 +21,9 @@ interface Experience {
   technologies: Technology[]
 }
 
-interface Projects {
+interface Project {
   title: string
-  shortDescription: string
+  img: any
   description: string
   codeLink: string
   pageLink: string
