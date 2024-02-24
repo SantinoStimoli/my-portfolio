@@ -52,13 +52,13 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
         content-visibility: auto;
       }
       html {
-        @apply bg-custom-bg text-custom-text;
+        @apply bg-primary text-primary-text;
       }
       body > main {
         @apply container mx-auto shadow-md rounded my-10 shadow-white;
       }
       body > main > main {
-        @apply bg-custom-bg text-custom-text bg-no-repeat bg-cover px-3 md:px-10;
+        @apply bg-primary text-primary-text bg-no-repeat bg-cover px-3 md:px-10;
         background-image: url('../assets/fondo.png');
       }
 
@@ -70,25 +70,10 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
         @apply text-4xl md:text-6xl font-black uppercase text-center mb-20;
       }
 
-      #bg-pic {
-        @apply bg-cover bg-center;
-        background-image: url('../assets/fondo-foto.png');
-      }
-
       @media (min-width: 1024px) {
         #start {
           height: calc(100vh - 2.5rem - 70px);
         }
-      }
-      .shadow-p {
-        -webkit-box-shadow: 0px 13px 60px -15px rgba(249, 0, 61, 1);
-        -moz-box-shadow: 0px 13px 60px -15px rgba(249, 0, 61, 1);
-        box-shadow: 0px 13px 60px -15px rgba(249, 0, 61, 1);
-      }
-      .shadow-p-2 {
-        -webkit-box-shadow: 0px -13px 60px -15px rgba(249, 0, 61, 1);
-        -moz-box-shadow: 0px -13px 60px -15px rgba(249, 0, 61, 1);
-        box-shadow: 0px -13px 60px -15px rgba(249, 0, 61, 1);
       }
     </style>
   </body>

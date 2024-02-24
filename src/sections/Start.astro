@@ -11,7 +11,7 @@ import TechClipSection from '@components/TechClipSection.astro'
 
 <section id='start' class='flex flex-col justify-between'>
   <section class='grid lg:grid-cols-2 place-items-center'>
-    <div id='bg-pic' class='bg-custom-bg-2 shadow-xl shadow-black rounded-full lg:order-2 lg:ml-auto lg:mr-5'>
+    <div id='bg-pic' class='bg-secondary shadow-xl shadow-black rounded-full lg:order-2 lg:ml-auto lg:mr-5'>
       <Picture
         src={MY_IMG}
         alt='Santino Stimoli retrato'
@@ -24,12 +24,10 @@ import TechClipSection from '@components/TechClipSection.astro'
     </div>
     <div class='max-lg:mt-20 max-lg:text-center max-lg:max-w-[400px]'>
       <h1 class='text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter'>Santino Stimoli</h1>
-      <h2
-        class='text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter text-custom-decoration'
-      >
+      <h2 class='text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter text-secondary'>
         {jobTitle}
       </h2>
-      <p class='text-lg my-10 md:mt-4 text-custom-text-2 [&_b]:underline [&_b]:text-custom-text'>
+      <p class='text-lg my-10 md:mt-4 text-secondary-text [&_b]:underline [&_b]:text-primary-text'>
         <b>Profesional</b>
         <b>proactivo</b> con sólidas habilidades interpersonales y <b>eficiencia</b> en entornos laborales. Destaco por mi
         capacidad para establecer <b>conexiones</b>
@@ -39,7 +37,7 @@ import TechClipSection from '@components/TechClipSection.astro'
       <TechClipSection style='mt-3 max-lg:justify-center' technologies={starredTechnologies} />
 
       <div
-        class='[&_a]:h-9 [&_a]:w-9 [&_a:hover]:text-custom-decoration [&_a]:transition-all flex gap-5 max-lg:justify-center mt-10'
+        class='[&_a]:h-9 [&_a]:w-9 [&_a:hover]:text-secondary [&_a]:transition-all flex gap-5 max-lg:justify-center mt-10'
       >
         <div class='flex items-center gap-3 max-md:flex-col'>
           <h3 class='text-2xl font-black uppercase'>Contacto:</h3>
@@ -51,7 +49,7 @@ import TechClipSection from '@components/TechClipSection.astro'
     </div>
   </section>
   <div class='lg:absolute max-lg:mt-20 inset-0 flex justify-center items-end view-more'>
-    <a href='#about' class='flex flex-col items-center uppercase hover:text-custom-decoration'>
+    <a href='#about' class='flex flex-col items-center uppercase hover:text-secondary'>
       <span>Ver mas</span>
       <i class='bx bx-chevron-down bx-md'></i>
     </a>
@@ -59,6 +57,11 @@ import TechClipSection from '@components/TechClipSection.astro'
 </section>
 
 <style>
+  #bg-pic {
+    @apply bg-cover bg-center;
+    background-image: url('../assets/fondo-foto.png');
+  }
+
   @keyframes moveUpDown {
     0%,
     100% {

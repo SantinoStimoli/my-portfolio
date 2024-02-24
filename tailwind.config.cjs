@@ -5,11 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-bg': '#140941',
-        'custom-bg-2': '#b6002d',
-        'custom-decoration': '#f9003d',
-        'custom-text': '#fff',
-        'custom-text-2': '#BEC0CF',
+        'primary': '#140941',
+        'secondary': '#f9003d',
+        'primary-text': '#fff',
+        'secondary-text': '#BEC0CF',
       },
       fontFamily: {
         sans: ['Inter Variable', 'Inter', ...defaultTheme.fontFamily.sans],
