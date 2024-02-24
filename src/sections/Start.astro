@@ -1,11 +1,12 @@
 ---
 import { Picture } from 'astro:assets'
-import MY_IMG from 'assets/Foto.png'
-import { starredTechnologies } from 'content/technologies'
-import { contactWays } from 'content/profile'
-import { jobTitle } from 'content/profile'
-import ContactLink from '@components/pure/ContactLink.astro'
-import TechClipSection from '@components/pure/TechClipSection.astro'
+import MY_IMG from '@assets/Foto.png'
+import { starredTechnologies } from '@content/technologies'
+
+import { contactWays } from '@content/profile'
+import { jobTitle } from '@content/profile'
+import ContactLink from '@components/ContactLink.astro'
+import TechClipSection from '@components/TechClipSection.astro'
 ---
 
 <section id='start' class='flex flex-col justify-between'>

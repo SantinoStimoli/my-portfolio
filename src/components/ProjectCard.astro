@@ -1,0 +1,64 @@
+---
+interface Props {
+  project?: Project
+}
+---
+
+<div class='project-card max-w-[350px] shadow-p rounded-t'>
+  <div
+    class='h-[74px] relative float-right shadow-p w-full px-5 py-2.5 z-30 bg-gradient-to-r from-custom-bg-2 to-custom-bg border border-b-0 text-xl font-bold'
+  >
+    <h1>{Astro.props.project?.title}</h1>
+    <h2 class='text-md font-light -mt-1'>{Astro.props.project?.company}</h2>
+  </div>
+  <div class='relative'>
+    <div>
+      <img class='h-[250px] w-full float-right border-x -z-10' src={Astro.props.project?.img} />
+      <div class='absolute top-[74px] right-0.5 px-2.5 py-1.5 bg-black/50 rounded-bl-md flex items-center gap-0.5 z-40'>
+        {Astro.props.project?.technologies.map((technology) => <i class={`bx ${technology.icon} text-3xl`} />)}
+      </div>
+      <div class='links absolute left-3 flex gap-5 z-10 transition-all'>
+        <div>
+          <i class='bx bxl-github bx-md'></i>
+        </div>
+        <div>
+          <i class='bx bx-link-external bx-md'></i>
+        </div>
+      </div>
+    </div>
+    <div
+      class='relative float-right px-5 py-2.5 bg-gradient-to-r from-custom-bg-2 to-custom-bg rounded-b border border-t-0 !z-50 shadow-p-2'
+    >
+      <p>
+        {Astro.props.project?.description}
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .project-card.visible-links .links {
+    top: 262px;
+  }
+  .project-card .links {
+    top: 330px;
+  }
+
+  .links > div {
+    @apply p-3 pt-3.5 bg-black/50 rounded-t-md flex items-center gap-0.5 z-20 hover:text-custom-decoration hover:bg-black/30 cursor-pointer transition-all;
+  }
+</style>
+
+<script>
+  const cards = document.getElementsByClassName('project-card')
+
+  Array.from(cards).forEach((card) => {
+    card.addEventListener('mouseenter', (e) => {
+      card.classList.add('visible-links')
+    })
+
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('visible-links')
+    })
+  })
+</script>

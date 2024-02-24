@@ -23,10 +23,10 @@ interface Experience {
 
 interface Project {
   title: string
+  company: string
   img: any
   description: string
   codeLink: string
   pageLink: string
   technologies: Technology[]
-  company?: string
 }

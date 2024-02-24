@@ -5,12 +5,11 @@
     "strictNullChecks": true,
     "types": ["astro/client"],
     "paths": {
-      "@lib/*": ["lib/*"],
-      "@utils/*": ["utils/*"],
       "@components/*": ["components/*"],
       "@layouts/*": ["layouts/*"],
       "@assets/*": ["assets/*"],
-      "@pages/*": ["pages/*"]
+      "@content/*": ["content/*"],
+      "@sections/*": ["sections/*"]
     }
   }
 }
