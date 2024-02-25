@@ -5,12 +5,16 @@ import { Picture } from 'astro:assets'
 
 const menuitems = [
   {
-    title: 'Trabajo',
-    path: '#work',
+    title: 'Sobre mi',
+    path: '#about',
   },
   {
     title: 'Stack',
     path: '#stack',
+  },
+  {
+    title: 'Trabajo',
+    path: '#work',
   },
   {
     title: 'Proyectos',
@@ -20,39 +24,24 @@ const menuitems = [
     title: 'Formación',
     path: '#study',
   },
-  {
-    title: 'Sobre mi',
-    path: '#about',
-  },
-  {
-    title: 'Contacto',
-    path: '#contact',
-  },
 ]
 ---
 
-<!-- TODO AL HACER CLICK DEBE CERRAR EL MENU EN MOBILE -->
 <header
   class='h-[70px] container flex flex-col lg:flex-row justify-between items-center px-5 py-1 w-full sticky top-0 bg-primary z-50 border-b mx-auto'
 >
   <Astronav>
     <div class='flex w-full lg:w-auto items-center justify-between'>
       <a href='#start' class='text-lg'>
-        <Picture
-          src={LOGO}
-          alt='Santino Stimoli retrato'
-          widths={[200, 400, 600]}
-          sizes='(max-width: 800px) 100vw, 620px'
-          loading='eager'
-          format='avif'
-          class='m-3 w-40'
-        />
+        <Picture src={LOGO} alt='Santino Stimoli logo' loading='eager' format='avif' class='m-3 w-40' />
       </a>
       <div class='block lg:hidden'>
         <MenuIcon class='w-4 h-4' />
       </div>
     </div>
-    <MenuItems class='hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 uppercase'>
+    <MenuItems
+      class='hidden w-full lg:w-auto mt-1.5 lg:flex lg:mt-0 uppercase max-lg:bg-primary max-lg:border max-lg:border-t-0 max-lg:rounded-b'
+    >
       <ul class='flex flex-col lg:flex-row lg:gap-3'>
         {
           menuitems.map((item, index) => (

@@ -6,7 +6,7 @@ interface Props {
 
 <div class='project-card w-[300px] md:w-[350px] shadow-p rounded-t'>
   <div
-    class='h-[74px] relative float-right shadow-p w-full px-5 py-2.5 z-30 bg-gradient-to-r from-secondary to-primary border border-b-0 text-xl font-bold'
+    class='h-[74px] relative float-right shadow-p w-full px-5 py-2.5 z-30 bg-gradient-to-r from-secondary to-primary border border-b-0 text-lg md::text-xl font-bold'
   >
     <h1>{Astro.props.project?.title}</h1>
     <h2 class='text-md font-light -mt-1'>{Astro.props.project?.company}</h2>
@@ -14,7 +14,7 @@ interface Props {
   <div class='relative'>
     <div>
       <img class='h-[250px] w-full float-right border-x -z-10' src={Astro.props.project?.img} />
-      <div class='absolute top-[74px] right-0.5 px-2.5 py-1.5 bg-black/50 rounded-bl-md flex items-center gap-0.5 z-40'>
+      <div class='absolute top-[74px] right-px px-2.5 py-1.5 bg-black/50 rounded-bl-md flex items-center gap-0.5 z-40'>
         {Astro.props.project?.technologies.map((technology) => <i class={`bx ${technology} text-3xl`} />)}
       </div>
       <div class='links absolute left-3 flex gap-5 z-10 transition-all'>

@@ -55,7 +55,7 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
         @apply bg-primary text-primary-text;
       }
       body > main {
-        @apply container mx-auto shadow-md rounded my-10 shadow-white;
+        @apply container mx-auto; /* shadow-md rounded my-10 shadow-white; */
       }
       body > main > main {
         @apply bg-primary text-primary-text bg-no-repeat bg-cover px-3 md:px-10;

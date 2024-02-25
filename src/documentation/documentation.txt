@@ -4,3 +4,6 @@ Ver mas y altura del hero esta mal para notebook
 Descripciones de proyectos
 Bug Foto
 Ver de poner en el footer los contactos y/o el codigo fuente
+TODO AL HACER CLICK DEBE CERRAR EL MENU EN MOBILE
+VER MODO CARTA PARA LA PAGINA
+HACER QUE LA FOTO SE MUEVA CUANDO EL MOUSE ESTA EN SU SECCION Y CUANDO SALE DE ELLA QUE VUELVA A LA NORMALIDAD

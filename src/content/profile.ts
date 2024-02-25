@@ -18,7 +18,7 @@ export const contactWays: ContactWay[] = [
     icon: 'bxs-phone',
   },
   {
-    link: 'https://www.linkedin.com/in/santinostimoli/overlay/1708533346439/single-media-viewer/?profileId=ACoAADxipfIBogTDoyRmX8KFJCM-O5NGps2mXK8',
+    link: 'https://www.canva.com/design/DAF4wiWLFGw/7N3EsdwjkNF39fE6-E5BvQ/edit?utm_content=DAF4wiWLFGw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
     icon: 'bxs-file-blank',
   },
 ]
