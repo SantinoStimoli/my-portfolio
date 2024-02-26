@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap'
 // https://astro.build/config
 export default defineConfig({
   site: 'https://santinostimoli.github.io',
-  base: '/my-portfolio',
+  base: '/change',
   integrations: [tailwind(), mdx(), sitemap()],
 })
