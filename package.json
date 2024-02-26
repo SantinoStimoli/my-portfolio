@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.2",
   "private": true,
+  "homepage": "https://santinostimoli.github.io/my-portfolio",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

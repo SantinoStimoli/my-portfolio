@@ -4,6 +4,7 @@ import Footer from '@components/Footer.astro'
 import Navbar from '@components/Nav.astro'
 import '@fontsource-variable/inter/index.css'
 import '@styles/style.css'
+import PortfolioIMG from '@assets/projects/Portfolio.png'
 ---
 
 <!doctype html>
@@ -21,6 +22,16 @@ import '@styles/style.css'
     <SEO
       title='Santino Stimoli - Software Developer'
       description='¡Hola! Soy Santino, un apasionado desarrollador de software, aquí podrás ver todos mis trabajos y proyectos para que puedas conocerme. ¡Bienvenido a mi portafolio!'
+      openGraph={{
+        basic: {
+          type: 'website',
+          title: `Santino Stimoli - Software Developer`,
+          image: PortfolioIMG.src,
+        },
+        image: {
+          alt: 'Homepage Screenshot',
+        },
+      }}
     />
   </head>
   <body>

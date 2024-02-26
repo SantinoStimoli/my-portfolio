@@ -14,7 +14,7 @@ interface Props {
   <div class='relative'>
     <div>
       <img class='h-[250px] w-full float-right border-x -z-10' src={Astro.props.project?.img} />
-      <div class='absolute top-[74px] right-px px-2.5 py-1.5 bg-black/50 rounded-bl-md flex items-center gap-0.5 z-40'>
+      <div class='absolute top-[74px] right-0 px-2.5 py-1.5 bg-black/50 rounded-bl-md flex items-center gap-0.5 z-40'>
         {Astro.props.project?.technologies.map((technology) => <i class={`bx ${technology} text-3xl`} />)}
       </div>
       <div class='links absolute left-3 flex gap-5 z-10 transition-all'>
