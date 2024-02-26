@@ -32,7 +32,9 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  #start {
-    height: calc(100vh - 2.5rem - 70px);
+  @media (min-height: 950px) {
+    #start {
+      height: calc(100vh - 2.5rem - 70px);
+    }
   }
 }
