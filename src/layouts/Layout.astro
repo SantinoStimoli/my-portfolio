@@ -4,11 +4,6 @@ import Footer from '@components/Footer.astro'
 import Navbar from '@components/Nav.astro'
 import '@fontsource-variable/inter/index.css'
 import '@styles/style.css'
-
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString()
-
-const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
-// TODO CAMBIAR IMAGEN
 ---
 
 <!doctype html>
@@ -26,18 +21,6 @@ const resolvedImageWithDomain = new URL('/opengraph.jpg', Astro.site).toString()
     <SEO
       title='Santino Stimoli - Software Developer'
       description='¡Hola! Soy Santino, un apasionado desarrollador de software, aquí podrás ver todos mis trabajos y proyectos para que puedas conocerme. ¡Bienvenido a mi portafolio!'
-      canonical={canonicalURL}
-      openGraph={{
-        basic: {
-          url: canonicalURL,
-          type: 'website',
-          title: `Santino Stimoli - Software Developer`,
-          image: resolvedImageWithDomain,
-        },
-        image: {
-          alt: 'Homepage Screenshot',
-        },
-      }}
     />
   </head>
   <body>
