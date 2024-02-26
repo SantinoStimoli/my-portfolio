@@ -48,8 +48,8 @@ import TechClipSection from '@components/TechClipSection.astro'
       </div>
     </div>
   </section>
-  <div class='lg:absolute max-lg:mt-20 inset-0 flex justify-center items-end view-more'>
-    <a href='#about' class='flex flex-col items-center uppercase hover:text-secondary'>
+  <div class='relative mt-20 inset-0 flex justify-center items-end'>
+    <a href='#about' class='relative flex flex-col items-center uppercase hover:text-secondary view-more top-0'>
       <span>Ver mas</span>
       <i class='bx bx-chevron-down bx-md'></i>
     </a>
@@ -65,17 +65,15 @@ import TechClipSection from '@components/TechClipSection.astro'
   @keyframes moveUpDown {
     0%,
     100% {
-      margin-bottom: 60px;
+      top: 20px;
     }
     50% {
-      margin-bottom: 80px;
+      top: 0;
     }
   }
 
-  @media (min-width: 1024px) {
-    .view-more {
-      animation: moveUpDown 1s linear infinite;
-    }
+  .view-more {
+    animation: moveUpDown 1s linear infinite;
   }
 </style>
 
@@ -96,6 +94,19 @@ import TechClipSection from '@components/TechClipSection.astro'
     rotateX(${xRotation}deg)
     rotateY(${yRotation}deg)
     `
+
     el !== null ? (el.style.transform = style) : ''
+    el !== null ? (el.style.transition = '') : ''
+  })
+
+  start?.addEventListener('mouseleave', (evt) => {
+    const style = `
+    perspective(500px)
+    scale(1)
+    rotateX(0deg)
+    rotateY(0deg)
+    `
+    el !== null ? (el.style.transform = style) : ''
+    el !== null ? (el.style.transition = 'all 200ms') : ''
   })
 </script>
