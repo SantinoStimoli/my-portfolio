@@ -32,7 +32,7 @@ const menuitems = [
 >
   <Astronav>
     <div class='flex w-full lg:w-auto items-center justify-between'>
-      <a href='#start' class='text-lg'>
+      <a href='#start' class='pageHref text-lg'>
         <Picture src={LOGO} alt='Santino Stimoli logo' loading='eager' format='avif' class='m-3 w-40' />
       </a>
       <div class='block lg:hidden'>
@@ -50,7 +50,7 @@ const menuitems = [
               <li>
                 <a
                   href={item.path}
-                  class='flex lg:px-3 py-2 items-center hover:text-secondary hover:bg-white/10 lg:rounded transition-all max-lg:pl-3'
+                  class='pageHref flex lg:px-3 py-2 items-center hover:text-secondary hover:bg-white/10 lg:rounded transition-all max-lg:pl-3'
                 >
                   <span> {item.title}</span>
                 </a>

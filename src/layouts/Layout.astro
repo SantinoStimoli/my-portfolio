@@ -2,7 +2,6 @@
 import { SEO } from 'astro-seo'
 import Footer from '@components/Footer.astro'
 import Navbar from '@components/Nav.astro'
-import '@fontsource-variable/inter/index.css'
 import '@styles/style.css'
 import PortfolioIMG from '@assets/projects/Portfolio.png'
 import { jobTitle } from '@content/profile'
@@ -43,5 +42,43 @@ import { jobTitle } from '@content/profile'
       </main>
       <Footer />
     </main>
+    <script>
+      window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY
+        const topButton = document.getElementById('topButton')
+
+        if (scrollPosition > 1000) {
+          topButton?.classList.add('show-button')
+          topButton?.classList.remove('hide-button')
+        } else {
+          topButton?.classList.remove('show-button')
+          topButton?.classList.add('hide-button')
+        }
+      })
+
+      document.querySelectorAll('.pageHref').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault()
+
+          const target = document.getElementById(this.getAttribute('href').substring(1))
+
+          if (['start', 'about'].includes(target ? target.id : '')) {
+            const targetPosition = target ? target.getBoundingClientRect().top + window.scrollY : 0
+            const offset = window.innerHeight / 2 - (target ? target.offsetHeight / 2 : 0)
+            const scrollTarget = targetPosition - offset
+            window.scrollTo({
+              top: scrollTarget,
+              behavior: 'smooth',
+            })
+          } else {
+            const targetPosition = target ? target.getBoundingClientRect().top + window.scrollY : 0
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth',
+            })
+          }
+        })
+      })
+    </script>
   </body>
 </html>
