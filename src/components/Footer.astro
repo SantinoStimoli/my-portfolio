@@ -1,5 +1,14 @@
-<footer class='h-[70px] container mx-auto border-t flex items-center justify-center gap-5'>
+---
+import ContactWays from './ContactWays.astro'
+---
+
+<footer
+  class='sm:h-[70px] container mx-auto border-t flex items-center justify-center sm:gap-5 max-sm:flex-col max-sm:py-5'
+>
   <p class='text-center text-sm'>
     Copyright © {new Date().getFullYear()} Santino Stimoli.
   </p>
+  <span class='max-sm:hidden'>•</span>
+  <hr class='sm:hidden border w-24 my-3 border-secondary' />
+  <ContactWays />
 </footer>

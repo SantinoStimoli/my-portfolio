@@ -1,23 +1,31 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded bg-secondary;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 img {
   content-visibility: auto;
 }
+
 html {
   @apply bg-primary text-primary-text;
 }
+
 .card {
-  @apply container shadow-md border-2 border-y-0 border-secondary md:my-10 mx-auto;
+  @apply container shadow-md  md:my-10 mx-auto;
 
   -webkit-box-shadow: 0px 0px 50px 30px rgba(255, 255, 255, 0.4);
   -moz-box-shadow: 0px 0px 50px 30px rgba(255, 255, 255, 0.4);
   box-shadow: 0px 0px 50px 30px rgba(255, 255, 255, 0.4);
 }
 
-header {
-  @apply border-t-2 border-t-secondary;
-}
-footer {
-  @apply border-b-2 border-b-secondary;
-}
 .content {
   @apply bg-primary text-primary-text bg-no-repeat bg-cover px-3 sm:px-10;
   background-image: url('../assets/fondo.png');

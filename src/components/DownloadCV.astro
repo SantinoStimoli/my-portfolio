@@ -1,1 +1,18 @@
-<a href='/Santino_Stimoli_CV_2024.pdf' download='mi_cv.pdf'>Descargar CV</a>
+---
+interface Props {
+  small?: boolean
+}
+---
+
+<div class=`flex justify-center !pt-0`>
+  <div
+    class={`
+      uppercase bg-transparent rounded border  flex items-center justify-center gap-3 text-lg sm:text-xl
+      hover:bg-secondary cursor-pointer transition-all
+      ${Astro.props.small ? 'px-7 py-3' : 'px-10 py-5'}
+      `}
+  >
+    <i class='bx bxs-download bx-md'></i>
+    <a href='/Santino_Stimoli_CV_2024.pdf' download='Santino_Stimoli_CV_2024.pdf'>Descargar CV</a>
+  </div>
+</div>
