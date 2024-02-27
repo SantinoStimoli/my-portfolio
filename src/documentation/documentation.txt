@@ -1,3 +1,2 @@
 Cambiar foto de perfil
-
-Ver de poner en el footer los contactos y/o el codigo fuente
+Agrgar boton abajo a la derecha para volver arriba
