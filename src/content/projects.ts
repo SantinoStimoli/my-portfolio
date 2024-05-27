@@ -1,8 +1,4 @@
-import SelatioLTD from '@assets/projects/SelatioLTD.png'
-import TUT88 from '@assets/projects/TUT88.png'
-import RNM from '@assets/projects/RNM.png'
 import Tecnicort from '@assets/projects/Presupuestos.png'
-import Alumnos from '@assets/projects/Alumnos-TKD.png'
 import CalculadoraGrupal from '@assets/projects/PlataGrupal.png'
 import InformacionIP from '@assets/projects/InformacionIP.png'
 import Calculadora from '@assets/projects/Calculadora.png'
@@ -11,16 +7,22 @@ import TaTeTi from '@assets/projects/TaTeTi.png'
 import PetShop from '@assets/projects/PetShop.png'
 import Rebel from '@assets/projects/RebelGames.png'
 import AmazingEvents from '@assets/projects/AmazingEvents.png'
+import RNM from '@assets/projects/RNM.png'
+import TUT88 from '@assets/projects/TUT88.png'
+import SELATIO from '@assets/projects/SelatioLTD.png'
+import CEUDA from '@assets/projects/CEUDA.png'
+import MTZ from '@assets/projects/MTZ.png'
+import BESTTRADING from '@assets/projects/BESTTRADING.png'
 
 export const projects: Project[] = [
   {
-    title: 'Selatio LTD (LP)',
+    title: 'RNM (LP)',
     company: 'Net Duo SA',
-    img: SelatioLTD.src,
+    img: RNM.src,
     description:
       'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
-    pageLink: 'https://www.selatioltd.com/',
-    technologies: ['bxl-react', 'bxl-javascript', 'bxl-tailwind-css'],
+    pageLink: 'https://rnmglobal-mkt.com/',
+    technologies: ['bxl-javascript', 'bxl-html5', 'bxl-css3'],
   },
   {
     title: 'TUT88 (LP)',
@@ -28,17 +30,44 @@ export const projects: Project[] = [
     img: TUT88.src,
     description:
       'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
-    pageLink: 'https://tut88mkt.com/',
+    pageLink: 'https://tut88.com/',
+    technologies: ['bxl-react', 'bxl-javascript', 'bxl-tailwind-css'],
+  },
+  {
+    title: 'Selatio LTD (LP)',
+    company: 'Net Duo SA',
+    img: SELATIO.src,
+    description:
+      'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
+    pageLink: 'https://www.selatio-ltd.com/',
+    technologies: ['bxl-react', 'bxl-javascript', 'bxl-tailwind-css'],
+  },
+  {
+    title: 'CEUDA (LP)',
+    company: 'Net Duo SA',
+    img: CEUDA.src,
+    description:
+      'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
+    pageLink: 'https://ceudainvestments.com/',
     technologies: ['bxl-wordpress'],
   },
   {
-    title: 'RNM (LP)',
+    title: 'MTZ INVESTMENTS (LP)',
     company: 'Net Duo SA',
-    img: RNM.src,
+    img: MTZ.src,
     description:
       'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
-    pageLink: 'https://www.rnmglobalmkt.com/',
-    technologies: ['bxl-javascript', 'bxl-html5', 'bxl-css3'],
+    pageLink: 'https://mtzinvestment.com/',
+    technologies: ['bxl-wordpress'],
+  },
+  {
+    title: 'BEST TRADING (LP)',
+    company: 'Net Duo SA',
+    img: BESTTRADING.src,
+    description:
+      'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
+    pageLink: 'https://besttradingacademies.com/',
+    technologies: ['bxl-wordpress'],
   },
   {
     title: 'Generador de presupuestos',
@@ -48,16 +77,6 @@ export const projects: Project[] = [
     pageLink: 'https://santinostimoli.github.io/Tecnicort/',
     codeLink: 'https://github.com/SantinoStimoli/Tecnicort',
     technologies: ['bxl-react', 'bxl-typescript', 'bxl-tailwind-css'],
-  },
-  {
-    title: 'ERP alumnos',
-    company: 'UAT',
-    img: Alumnos.src,
-    description:
-      'Servicio ERP que gestiona la información de los alumnos del usuario, incluyendo datos personales y acciones relacionadas con la actividad de TaeKwon-Do.',
-    pageLink: 'https://santinostimoli.github.io/alumnos-tkd/',
-    codeLink: 'https://github.com/SantinoStimoli/alumnos-tkd',
-    technologies: ['bxl-firebase', 'bxl-react', 'bxl-typescript', 'bxl-tailwind-css'],
   },
   {
     title: 'Calculador grupal',
