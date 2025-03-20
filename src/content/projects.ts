@@ -8,8 +8,9 @@ import PetShop from '@assets/projects/PetShop.png'
 import Rebel from '@assets/projects/RebelGames.png'
 import AmazingEvents from '@assets/projects/AmazingEvents.png'
 import RNM from '@assets/projects/RNM.png'
-import TUT88 from '@assets/projects/TUT88.png'
-import SELATIO from '@assets/projects/SelatioLTD.png'
+import AlphaConnects from '@assets/projects/AlphaConnects.png'
+// import TUT88 from '@assets/projects/TUT88.png'
+// import SELATIO from '@assets/projects/SelatioLTD.png'
 import CEUDA from '@assets/projects/CEUDA.png'
 import MTZ from '@assets/projects/MTZ.png'
 import BESTTRADING from '@assets/projects/BESTTRADING.png'
@@ -25,23 +26,32 @@ export const projects: Project[] = [
     technologies: ['bxl-javascript', 'bxl-html5', 'bxl-css3'],
   },
   {
-    title: 'TUT88 (LP)',
+    title: 'Alpha Connects Academy',
     company: 'Net Duo SA',
-    img: TUT88.src,
+    img: AlphaConnects.src,
     description:
-      'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
-    pageLink: 'https://tut88.com/',
-    technologies: ['bxl-react', 'bxl-javascript', 'bxl-tailwind-css'],
+      'Academy page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
+    pageLink: 'https://alpha-connects.com/',
+    technologies: ['bxl-javascript', 'bxl-html5', 'bxl-css3'],
   },
-  {
-    title: 'Selatio LTD (LP)',
-    company: 'Net Duo SA',
-    img: SELATIO.src,
-    description:
-      'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
-    pageLink: 'https://www.selatio-ltd.com/',
-    technologies: ['bxl-react', 'bxl-javascript', 'bxl-tailwind-css'],
-  },
+  // {
+  //   title: 'TUT88 (LP)',
+  //   company: 'Net Duo SA',
+  //   img: TUT88.src,
+  //   description:
+  //     'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
+  //   pageLink: 'https://tut88.com/',
+  //   technologies: ['bxl-react', 'bxl-javascript', 'bxl-tailwind-css'],
+  // },
+  // {
+  //   title: 'Selatio LTD (LP)',
+  //   company: 'Net Duo SA',
+  //   img: SELATIO.src,
+  //   description:
+  //     'Landing page responsive que presenta la información corporativa de la empresa, acompañada de un formulario de contacto.',
+  //   pageLink: 'https://www.selatio-ltd.com/',
+  //   technologies: ['bxl-react', 'bxl-javascript', 'bxl-tailwind-css'],
+  // },
   {
     title: 'CEUDA (LP)',
     company: 'Net Duo SA',
