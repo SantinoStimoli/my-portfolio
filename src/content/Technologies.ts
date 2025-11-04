@@ -85,6 +85,10 @@ const backEndTechnologies: Technology[] = [
     name: 'Spring',
     icon: 'bxl-spring-boot',
   },
+  { 
+    name: 'AWS',
+    icon: 'bxl-aws' 
+  },
   {
     name: 'SQL',
     icon: 'bxl-data',

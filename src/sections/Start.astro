@@ -16,10 +16,10 @@ import DownloadCV from '@components/DownloadCV.astro'
         src={MY_IMG}
         alt='Santino Stimoli retrato'
         widths={[200, 400, 600]}
-        sizes='(max-width: 800px) 100vw, 620px'
+        sizes='(max-width: 800px) 100vw, 450px'
         loading='eager'
         format='avif'
-        class='rounded-full m-3 max-w-[550px] w-auto'
+        class='rounded-full m-3 max-w-[450px] w-auto'
       />
     </div>
     <div class='max-lg:mt-20 max-lg:text-center max-lg:max-w-[400px]'>
@@ -73,7 +73,7 @@ import DownloadCV from '@components/DownloadCV.astro'
   }
 </style>
 
-<script>
+<!-- <script>
   const start = document.getElementById('start')
   const el = document.getElementById('bg-pic')
   const height = el?.clientHeight ?? 0
@@ -105,4 +105,4 @@ import DownloadCV from '@components/DownloadCV.astro'
     el !== null ? (el.style.transform = style) : ''
     el !== null ? (el.style.transition = 'all 200ms') : ''
   })
-</script>
+</script> -->

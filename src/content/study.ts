@@ -2,7 +2,7 @@ export const studyExperience: Experience[] = [
   {
     title: 'Front End JAVA Developer',
     company: 'Mindhub LA',
-    range: 'MAY 2022 - NOV 2022',
+    range: 'ABR 2022 - SEP 2022',
     description: '',
     technologies: [
       {
@@ -46,7 +46,7 @@ export const studyExperience: Experience[] = [
   {
     title: 'MERN Developer',
     company: 'OpenBootcamp',
-    range: 'NOV 2022 - MAY 2023',
+    range: 'SEP 2022 - FEB 2023',
     description: '',
     technologies: [
       {
