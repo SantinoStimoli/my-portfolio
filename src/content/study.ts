@@ -6,7 +6,6 @@ export const studyExperience: Experience[] = [
     description:
       'Formación intensiva en desarrollo de aplicaciones web utilizando Java, Spring, SQL y tecnologías modernas de frontend.',
     technologies: [
-        name: 'CSS',
       { name: 'HTML', icon: 'bxl-html5' },
       { name: 'CSS', icon: 'bxl-css3' },
       { name: 'Bootstrap', icon: 'bxl-bootstrap' },
